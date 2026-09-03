@@ -1,0 +1,5 @@
+﻿node,branch_1,branch_1_weight,branch_2,branch_2_weight
+TD P3,upsampled P4,0.7368192076683044,lateral P3,1.2631807327270508
+TD P2,upsampled P3,1.2847802639007568,lateral P2,0.7152198553085327
+BU P3,downsampled P2,1.089554786682129,top-down P3,0.9104452729225159
+BU P4,downsampled P3,1.0066784620285034,deep P4,0.9933216571807861

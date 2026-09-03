@@ -1,0 +1,31 @@
+.venv/
+.venv_cpu_backup/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Training/runtime products. Checkpoints can be regenerated or obtained
+# separately and are intentionally not versioned in the source repository.
+runs/
+artifacts/
+weights/
+*.pt
+*.onnx
+*.engine
+tmp/
+smoke_*.log
+
+# Keep curated experiment plans, reports, figures and summary metrics. Raw
+# console output, transient completion state and per-image prediction dumps are
+# bulky, machine-specific or reproducible from the saved checkpoints.
+reports/**/logs/
+reports/**/*.log
+reports/**/status.json
+reports/**/*status*.json
+reports/**/*.flag
+reports/**/shutdown_watchdog_*
+reports/**/metrics/*_predictions.json
+reports/**/metrics/*ground_truth.json
+reports/**/metrics/*_per_image_timing.csv
+reports/**/metrics/smoke_*.json

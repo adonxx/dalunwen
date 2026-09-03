@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-26T01:30:23+08:00",
+  "stage": "mffpn_weighted",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\mffpn_weighted_50e\\weights\\best.pt",
+    "size_bytes": 6703949,
+    "sha256": "8da2cf98ff2287947e226cbd8c2132a251e9d7d8028a5f562ae3e2421e85402c"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 3169430,
+    "parameters_m": 3.16943,
+    "gflops_640": 24.5231616,
+    "strides": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "post_validation_fused_parameters": 3161526,
+    "post_validation_fused_parameters_m": 3.161526,
+    "post_validation_fused_gflops_640": 24.160256
+  },
+  "overall": {
+    "metrics/precision(B)": 0.4924500750992552,
+    "metrics/recall(B)": 0.38224845619826675,
+    "metrics/mAP50(B)": 0.36741119572635894,
+    "metrics/mAP50-95(B)": 0.21371738595772694,
+    "fitness": 0.21371738595772694
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5403398054571386,
+      "recall": 0.40988240615106286,
+      "ap50": 0.41805055664376745,
+      "ap50_95": 0.18778070233986102
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5189546668357237,
+      "recall": 0.3133658536585366,
+      "ap50": 0.3143814873338159,
+      "ap50_95": 0.11889343921492276
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.24193164422966917,
+      "recall": 0.18598051508076807,
+      "ap50": 0.12204414947062331,
+      "ap50_95": 0.04682478138628272
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6945664510999142,
+      "recall": 0.7956484641638225,
+      "ap50": 0.7976458942318857,
+      "ap50_95": 0.5471527286751792
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.5159280403688025,
+      "recall": 0.4203873380640413,
+      "ap50": 0.4151943513335312,
+      "ap50_95": 0.2959310149933682
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.5089615671156863,
+      "recall": 0.3316806482441692,
+      "ap50": 0.32709816314036455,
+      "ap50_95": 0.20871972446429993
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.45328827939541533,
+      "recall": 0.24114832535885167,
+      "ap50": 0.21593953030287738,
+      "ap50_95": 0.11615091689437129
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.2759498987116638,
+      "recall": 0.19360902255639098,
+      "ap50": 0.12740824711441628,
+      "ap50_95": 0.08215748368085916
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6342442318456121,
+      "recall": 0.4940239043824701,
+      "ap50": 0.5039755564220718,
+      "ap50_95": 0.34649351180295207
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.5403361659329255,
+      "recall": 0.43675808432255425,
+      "ap50": 0.43237402127023555,
+      "ap50_95": 0.18706955612517284
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.09918923406474238,
+    "inference": 1.4801899637826412,
+    "loss": 0.00082700727651929,
+    "postprocess": 1.535248539680751
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\weighted_eval_mffpn_50e"
+}

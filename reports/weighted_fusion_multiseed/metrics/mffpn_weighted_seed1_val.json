@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-26T17:58:18+08:00",
+  "stage": "mffpn_weighted",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\mffpn_weighted_seed1_50e\\weights\\best.pt",
+    "size_bytes": 6703949,
+    "sha256": "be45ba7e555a5bd7d3e7ada3c8a042e63de3b93f0bd624a9c6a98ad372a0b895"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 3169430,
+    "parameters_m": 3.16943,
+    "gflops_640": 24.5231616,
+    "strides": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "post_validation_fused_parameters": 3161526,
+    "post_validation_fused_parameters_m": 3.161526,
+    "post_validation_fused_gflops_640": 24.160256
+  },
+  "overall": {
+    "metrics/precision(B)": 0.49170733405458655,
+    "metrics/recall(B)": 0.3772347447117161,
+    "metrics/mAP50(B)": 0.3625207210404622,
+    "metrics/mAP50-95(B)": 0.21028050413036603,
+    "fitness": 0.21028050413036603
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5259020396773774,
+      "recall": 0.42017186793306194,
+      "ap50": 0.4232885537007849,
+      "ap50_95": 0.18779050861851826
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.528777380650194,
+      "recall": 0.3071219512195122,
+      "ap50": 0.31241310897726526,
+      "ap50_95": 0.11748393723162412
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.2451133498967416,
+      "recall": 0.18414918414918416,
+      "ap50": 0.11093126278387369,
+      "ap50_95": 0.0429427166811391
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6985114032301726,
+      "recall": 0.7910978384527872,
+      "ap50": 0.794955038230719,
+      "ap50_95": 0.5455242928965668
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.5202288553490312,
+      "recall": 0.43493670886075947,
+      "ap50": 0.42657842344273655,
+      "ap50_95": 0.29988053852401575
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.4936720729489873,
+      "recall": 0.3250020479474254,
+      "ap50": 0.3183806547496702,
+      "ap50_95": 0.19907766632165835
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.45120586158374676,
+      "recall": 0.24311267908645046,
+      "ap50": 0.2204446166056062,
+      "ap50_95": 0.12539552258367564
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.27121786878616466,
+      "recall": 0.16353383458646617,
+      "ap50": 0.11306318580561256,
+      "ap50_95": 0.06974080026907452
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6588838986702922,
+      "recall": 0.4541832669322709,
+      "ap50": 0.47225394427412315,
+      "ap50_95": 0.32958130950666636
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.5235606097531582,
+      "recall": 0.4490380679492427,
+      "ap50": 0.43289842183422983,
+      "ap50_95": 0.18538774867072116
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.13961843058788115,
+    "inference": 2.984553831767539,
+    "loss": 0.002192883339309453,
+    "postprocess": 2.4804385035021745
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\multiseed_eval_mffpn_weighted_seed1_50e"
+}

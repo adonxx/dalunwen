@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-03T20:20:53+08:00",
+  "stage": "full",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\selective_kd_p34_seed0_50e\\weights\\best.pt",
+    "size_bytes": 12060115,
+    "sha256": "d25018cf418440a639c839a5459725fdc2e6a69a34638cde1adda8d7307b4bce"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 2772349,
+    "parameters_m": 2.772349,
+    "gflops_640": 19.1901696,
+    "strides": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "post_validation_fused_parameters": 2765853,
+    "post_validation_fused_parameters_m": 2.765853,
+    "post_validation_fused_gflops_640": 18.9362176
+  },
+  "overall": {
+    "metrics/precision(B)": 0.4752427361472308,
+    "metrics/recall(B)": 0.37712745280260984,
+    "metrics/mAP50(B)": 0.35370806571596347,
+    "metrics/mAP50-95(B)": 0.20026148669094376,
+    "fitness": 0.20026148669094376
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5066457294381034,
+      "recall": 0.4465174129353234,
+      "ap50": 0.43604015775790017,
+      "ap50_95": 0.19073410874728874
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5159753484574168,
+      "recall": 0.33775609756097563,
+      "ap50": 0.32915774981220747,
+      "ap50_95": 0.12256127188508628
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.2477502903720542,
+      "recall": 0.14918414918414918,
+      "ap50": 0.10076555326082359,
+      "ap50_95": 0.03946961476236732
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6795955072240647,
+      "recall": 0.810580204778157,
+      "ap50": 0.8030929747126851,
+      "ap50_95": 0.5374094089395548
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.5175153883212915,
+      "recall": 0.43067133319809986,
+      "ap50": 0.42374820439082017,
+      "ap50_95": 0.29175012180662446
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.4906520538282463,
+      "recall": 0.32666666666666666,
+      "ap50": 0.2996078059055146,
+      "ap50_95": 0.18676043509036971
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.3995060961266797,
+      "recall": 0.22488038277511962,
+      "ap50": 0.1993680956959562,
+      "ap50_95": 0.10576674780520327
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.2335807093122214,
+      "recall": 0.17293233082706766,
+      "ap50": 0.0821179269005888,
+      "ap50_95": 0.051643906706718604
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6337822424359465,
+      "recall": 0.4103585657370518,
+      "ap50": 0.429952541393821,
+      "ap50_95": 0.2939330342352352
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.5274239959562843,
+      "recall": 0.46172738436348754,
+      "ap50": 0.4332296473293177,
+      "ap50_95": 0.18258621693098903
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.10779452557232821,
+    "inference": 1.3339883210717438,
+    "loss": 0.0007492699628495305,
+    "postprocess": 1.7191217152984306
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\selective_kd_p34_seed0_50e_eval"
+}

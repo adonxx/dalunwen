@@ -1,0 +1,17 @@
+# Training parameters explicitly reported in the paper.
+data: configs/data/visdrone2019.yaml
+imgsz: 640
+epochs: 150
+batch: 4
+optimizer: SGD
+lr0: 0.01
+weight_decay: 0.0005
+
+# Not reported by the paper. These are fixed for auditable reproduction.
+seed: 0
+deterministic: true
+device: 0
+workers: 4
+project: runs
+exist_ok: false
+

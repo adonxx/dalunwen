@@ -1,0 +1,20 @@
+{
+  "top1": {
+    "images": 548,
+    "predictions": 149547,
+    "max_per_image": 300,
+    "invalid": 0
+  },
+  "gate_q20": {
+    "images": 548,
+    "predictions": 145511,
+    "max_per_image": 300,
+    "invalid": 0
+  },
+  "gate_q30": {
+    "images": 548,
+    "predictions": 143030,
+    "max_per_image": 300,
+    "invalid": 0
+  }
+}

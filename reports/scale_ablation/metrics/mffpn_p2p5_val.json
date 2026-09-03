@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-25T00:36:04+08:00",
+  "stage": "mffpn_p2p5",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\scale_mffpn_p2p5_50e\\weights\\best.pt",
+    "size_bytes": 8973321,
+    "sha256": "527711bf01b73a60f6f7f7b3f48d20ae0b19f787cd9e30293e2acffa8f69ae2c"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 4286104,
+    "parameters_m": 4.286104,
+    "gflops_640": 25.4189568,
+    "strides": [
+      4.0,
+      8.0,
+      16.0,
+      32.0
+    ],
+    "post_validation_fused_parameters": 4276664,
+    "post_validation_fused_parameters_m": 4.276664,
+    "post_validation_fused_gflops_640": 25.051136
+  },
+  "overall": {
+    "metrics/precision(B)": 0.4883428599163689,
+    "metrics/recall(B)": 0.381507168010117,
+    "metrics/mAP50(B)": 0.36705479164739346,
+    "metrics/mAP50-95(B)": 0.21277819462255412,
+    "fitness": 0.21277819462255412
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5204605823924814,
+      "recall": 0.42399706657401437,
+      "ap50": 0.41980069273188636,
+      "ap50_95": 0.1882016321910499
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5314549613009141,
+      "recall": 0.30985365853658536,
+      "ap50": 0.3220717429308321,
+      "ap50_95": 0.12129260206419186
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.22838961109256567,
+      "recall": 0.19735819735819735,
+      "ap50": 0.12365687770914816,
+      "ap50_95": 0.0504152660284737
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6756727730949298,
+      "recall": 0.8007928639214589,
+      "ap50": 0.7964926359808695,
+      "ap50_95": 0.5437386411735244
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.5070714031820774,
+      "recall": 0.41265822784810124,
+      "ap50": 0.41344567917487096,
+      "ap50_95": 0.28842845485386964
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.4792914740785969,
+      "recall": 0.33466666666666667,
+      "ap50": 0.31626074717922276,
+      "ap50_95": 0.20778944256019458
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.4481556283865307,
+      "recall": 0.24946038991154518,
+      "ap50": 0.2312744319927383,
+      "ap50_95": 0.1275457447404736
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.2862544173990972,
+      "recall": 0.14473684210526316,
+      "ap50": 0.1077403894846196,
+      "ap50_95": 0.06809145229740733
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6455721027559063,
+      "recall": 0.4820717131474104,
+      "ap50": 0.4922528251731455,
+      "ap50_95": 0.34241770171236074
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.561105645480589,
+      "recall": 0.459476054031928,
+      "ap50": 0.44755189411660157,
+      "ap50_95": 0.1898610086039953
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.11124306563504659,
+    "inference": 1.5702054745012708,
+    "loss": 0.0008012774058602356,
+    "postprocess": 1.5934571167939542
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\scale_eval_mffpn_p2p5_50e"
+}

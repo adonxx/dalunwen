@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-25T01:42:09+08:00",
+  "stage": "mffpn_p3p5",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\scale_mffpn_p3p5_50e\\weights\\best.pt",
+    "size_bytes": 8848473,
+    "sha256": "ca4cc9031d62086229ac627fb362d03e7a91e3366c45528e7346f375ef41c1a7"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 4280078,
+    "parameters_m": 4.280078,
+    "gflops_640": 21.2514304,
+    "strides": [
+      8.0,
+      16.0,
+      32.0
+    ],
+    "post_validation_fused_parameters": 4270446,
+    "post_validation_fused_parameters_m": 4.270446,
+    "post_validation_fused_gflops_640": 20.9493504
+  },
+  "overall": {
+    "metrics/precision(B)": 0.4962194265406444,
+    "metrics/recall(B)": 0.37355132790519263,
+    "metrics/mAP50(B)": 0.35543078442397635,
+    "metrics/mAP50-95(B)": 0.20443797517876863,
+    "fitness": 0.20443797517876863
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5118343906267978,
+      "recall": 0.41429217548620534,
+      "ap50": 0.4007560260654135,
+      "ap50_95": 0.17148339003815738
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5448403247026852,
+      "recall": 0.27531707317073173,
+      "ap50": 0.28663778568863857,
+      "ap50_95": 0.0999190099680944
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.251283415226971,
+      "recall": 0.14342712393981577,
+      "ap50": 0.09800112878552877,
+      "ap50_95": 0.03548966284300559
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6956496282235828,
+      "recall": 0.7856228668941979,
+      "ap50": 0.7763839282023918,
+      "ap50_95": 0.5268785048964614
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.493523320709408,
+      "recall": 0.43493670886075947,
+      "ap50": 0.4201317473992703,
+      "ap50_95": 0.29223749070282284
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.5211869311728684,
+      "recall": 0.3626666666666667,
+      "ap50": 0.33873570628650307,
+      "ap50_95": 0.21407172911273364
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.43851057696401224,
+      "recall": 0.24497607655502393,
+      "ap50": 0.22705024535829216,
+      "ap50_95": 0.1262950626166651
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.28392990303918636,
+      "recall": 0.17481203007518797,
+      "ap50": 0.11457786732932465,
+      "ap50_95": 0.07231877594022357
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.7079068100729687,
+      "recall": 0.4541832669322709,
+      "ap50": 0.479016914158252,
+      "ap50_95": 0.33915780795685424
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.5135289646679629,
+      "recall": 0.44527929047106646,
+      "ap50": 0.4130164949661486,
+      "ap50_95": 0.16652831771266774
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.10678704382331676,
+    "inference": 1.3749751824633656,
+    "loss": 0.0008554744075756031,
+    "postprocess": 0.7917968978821538
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\scale_eval_mffpn_p3p5_50e"
+}

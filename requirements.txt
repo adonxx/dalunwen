@@ -1,0 +1,7 @@
+# Ultralytics was not versioned in the paper. This project initially pins the
+# locally validated release; see README.md before claiming an exact replication.
+ultralytics==8.4.110
+torch==2.8.0
+torchvision==0.23.0
+PyYAML>=6.0.2,<7
+

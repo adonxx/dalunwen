@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-26T20:49:02+08:00",
+  "stage": "mffpn_weighted",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\mffpn_weighted_seed2_50e\\weights\\best.pt",
+    "size_bytes": 6703949,
+    "sha256": "9e15ed7a0f24198eaff140a9f4e1e72fbed3fd7f69b346f339087e94def35bb5"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 3169430,
+    "parameters_m": 3.16943,
+    "gflops_640": 24.5231616,
+    "strides": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "post_validation_fused_parameters": 3161526,
+    "post_validation_fused_parameters_m": 3.161526,
+    "post_validation_fused_gflops_640": 24.160256
+  },
+  "overall": {
+    "metrics/precision(B)": 0.4983632532355683,
+    "metrics/recall(B)": 0.37595293618032316,
+    "metrics/mAP50(B)": 0.3652532505981881,
+    "metrics/mAP50-95(B)": 0.2123026274323031,
+    "fitness": 0.2123026274323031
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5268530376144616,
+      "recall": 0.41802351876978744,
+      "ap50": 0.42310487516639284,
+      "ap50_95": 0.18961860789679502
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5342299074089599,
+      "recall": 0.30497560975609755,
+      "ap50": 0.3145796163987777,
+      "ap50_95": 0.11631199481169734
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.23081554504062118,
+      "recall": 0.19095903433530412,
+      "ap50": 0.12004264210345308,
+      "ap50_95": 0.04950292030455049
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6862854454101944,
+      "recall": 0.7999775278645243,
+      "ap50": 0.7995301854929961,
+      "ap50_95": 0.5467607756475406
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.5135771226444668,
+      "recall": 0.42500278964141763,
+      "ap50": 0.41716208715756753,
+      "ap50_95": 0.29571939660708424
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.5201348763430617,
+      "recall": 0.3373333333333333,
+      "ap50": 0.3339562319302193,
+      "ap50_95": 0.2134855435289796
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.460164884443014,
+      "recall": 0.24688995215311005,
+      "ap50": 0.2224390981703966,
+      "ap50_95": 0.125840925738603
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.28275905755273784,
+      "recall": 0.14849624060150377,
+      "ap50": 0.10685017217715956,
+      "ap50_95": 0.06656481781957276
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6870790933732049,
+      "recall": 0.4541832669322709,
+      "ap50": 0.48493070608179434,
+      "ap50_95": 0.3337914974034411
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.5417335625249602,
+      "recall": 0.43368808841588213,
+      "ap50": 0.42993689130312396,
+      "ap50_95": 0.18542979456476646
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.11095839451036558,
+    "inference": 1.657102919497228,
+    "loss": 0.0007795619253191526,
+    "postprocess": 1.5574434309977745
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\multiseed_eval_mffpn_weighted_seed2_50e"
+}

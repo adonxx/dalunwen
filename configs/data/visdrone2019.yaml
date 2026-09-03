@@ -1,0 +1,19 @@
+# Read-only reference to the existing YOLO-format VisDrone2019 dataset.
+# Training code never writes into this directory.
+path: E:/yolo_dcaf/data/VisDrone_YOLO
+train: train/images
+val: val/images
+test: test/images
+
+names:
+  0: pedestrian
+  1: people
+  2: bicycle
+  3: car
+  4: van
+  5: truck
+  6: tricycle
+  7: awning-tricycle
+  8: bus
+  9: motor
+

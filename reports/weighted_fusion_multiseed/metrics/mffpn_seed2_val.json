@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-08-26T19:27:21+08:00",
+  "stage": "mffpn",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\mffpn_seed2_50e\\weights\\best.pt",
+    "size_bytes": 6702677,
+    "sha256": "ddc295537c39cd7c218ce8d57dda2d8ab7bb8f06dfd6ef4307eda379f477d19a"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 3169422,
+    "parameters_m": 3.169422,
+    "gflops_640": 24.5231616,
+    "strides": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "post_validation_fused_parameters": 3161518,
+    "post_validation_fused_parameters_m": 3.161518,
+    "post_validation_fused_gflops_640": 24.160256
+  },
+  "overall": {
+    "metrics/precision(B)": 0.49572861160608195,
+    "metrics/recall(B)": 0.38370104392948595,
+    "metrics/mAP50(B)": 0.36780917116569056,
+    "metrics/mAP50-95(B)": 0.21594663114734786,
+    "fitness": 0.21594663114734786
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.510410871478224,
+      "recall": 0.42989597467209406,
+      "ap50": 0.4221712737296,
+      "ap50_95": 0.18853677671533803
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5217635470382549,
+      "recall": 0.31726829268292683,
+      "ap50": 0.31822817138811976,
+      "ap50_95": 0.11917446448118585
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.22593521701226058,
+      "recall": 0.16317016317016317,
+      "ap50": 0.10414841010302324,
+      "ap50_95": 0.0421774592134354
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6811402797449697,
+      "recall": 0.8004124004550626,
+      "ap50": 0.7984091367138494,
+      "ap50_95": 0.546487797926004
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.5294764519296588,
+      "recall": 0.429873417721519,
+      "ap50": 0.42099646850884387,
+      "ap50_95": 0.29704990162667577
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.49769112846593994,
+      "recall": 0.32133333333333336,
+      "ap50": 0.3140900736871769,
+      "ap50_95": 0.2013670957637871
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.45785726253537123,
+      "recall": 0.24210526315789474,
+      "ap50": 0.22208130656760544,
+      "ap50_95": 0.1252704148235733
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.29721879064278073,
+      "recall": 0.18233082706766918,
+      "ap50": 0.10952512675454205,
+      "ap50_95": 0.07132188913110522
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6889168175109492,
+      "recall": 0.50199203187251,
+      "ap50": 0.5264819378353667,
+      "ap50_95": 0.3761346798417132
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.5468757497024105,
+      "recall": 0.44862873516168644,
+      "ap50": 0.4419598063687782,
+      "ap50_95": 0.19194583195066095
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.13886751856886015,
+    "inference": 2.623132481851554,
+    "loss": 0.0021598537845101996,
+    "postprocess": 2.6312870439566862
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\multiseed_eval_mffpn_seed2_50e"
+}

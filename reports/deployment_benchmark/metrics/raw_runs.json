@@ -1,0 +1,278 @@
+[
+  {
+    "variant": "baseline",
+    "stage": "baseline",
+    "run_name": "baseline_paper",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\baseline_paper\\weights\\best.pt",
+    "precision": "FP32",
+    "effective_model_dtype": "float32",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.511310499539832,
+      "e2e_p50": 7.225800000014715,
+      "e2e_p95": 9.664734998659696,
+      "preprocess_mean": 0.9004455003741896,
+      "inference_mean": 5.37541149999015,
+      "postprocess_mean": 1.0143079998670146
+    },
+    "fps_e2e": 133.13256056466622,
+    "peak_allocated_mib": 96.2158203125,
+    "model": {
+      "parameters_m": 9.41667
+    }
+  },
+  {
+    "variant": "baseline",
+    "stage": "baseline",
+    "run_name": "baseline_paper_seed1",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\baseline_paper_seed1\\weights\\best.pt",
+    "precision": "FP32",
+    "effective_model_dtype": "float32",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.775608499941882,
+      "e2e_p50": 7.539849997556303,
+      "e2e_p95": 10.073639998154247,
+      "preprocess_mean": 0.9486934998130891,
+      "inference_mean": 5.549244999710936,
+      "postprocess_mean": 1.0459559999435442
+    },
+    "fps_e2e": 128.60729806644386,
+    "peak_allocated_mib": 132.7685546875,
+    "model": {
+      "parameters_m": 9.41667
+    }
+  },
+  {
+    "variant": "baseline",
+    "stage": "baseline",
+    "run_name": "baseline_paper_seed2",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\baseline_paper_seed2\\weights\\best.pt",
+    "precision": "FP32",
+    "effective_model_dtype": "float32",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.537238499789964,
+      "e2e_p50": 7.315799994103145,
+      "e2e_p95": 8.838514993112765,
+      "preprocess_mean": 0.9336604996497044,
+      "inference_mean": 5.323232500595623,
+      "postprocess_mean": 1.056796999037033
+    },
+    "fps_e2e": 132.67458632599545,
+    "peak_allocated_mib": 132.7685546875,
+    "model": {
+      "parameters_m": 9.41667
+    }
+  },
+  {
+    "variant": "full",
+    "stage": "full",
+    "run_name": "full_paper",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper\\weights\\best.pt",
+    "precision": "FP32",
+    "effective_model_dtype": "float32",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.185894999638549,
+      "e2e_p50": 6.7530000014812686,
+      "e2e_p95": 9.807814990199402,
+      "preprocess_mean": 0.9391559998766752,
+      "inference_mean": 4.8030865001055645,
+      "postprocess_mean": 1.2250400002812967
+    },
+    "fps_e2e": 139.16151015987572,
+    "peak_allocated_mib": 127.16943359375,
+    "model": {
+      "parameters_m": 2.765853
+    }
+  },
+  {
+    "variant": "full",
+    "stage": "full",
+    "run_name": "full_paper_seed1",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper_seed1\\weights\\best.pt",
+    "precision": "FP32",
+    "effective_model_dtype": "float32",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.247926499330788,
+      "e2e_p50": 6.99239999812562,
+      "e2e_p95": 9.49558000429533,
+      "preprocess_mean": 0.9583310002926737,
+      "inference_mean": 4.827971999839065,
+      "postprocess_mean": 1.225029499764787
+    },
+    "fps_e2e": 137.97049405679425,
+    "peak_allocated_mib": 102.47607421875,
+    "model": {
+      "parameters_m": 2.765853
+    }
+  },
+  {
+    "variant": "full",
+    "stage": "full",
+    "run_name": "full_paper_seed2",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper_seed2\\weights\\best.pt",
+    "precision": "FP32",
+    "effective_model_dtype": "float32",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.190684499000781,
+      "e2e_p50": 6.965799992030952,
+      "e2e_p95": 9.127715010254175,
+      "preprocess_mean": 0.9653125001932494,
+      "inference_mean": 4.772718499734765,
+      "postprocess_mean": 1.219726000999799
+    },
+    "fps_e2e": 139.06881885013314,
+    "peak_allocated_mib": 100.97607421875,
+    "model": {
+      "parameters_m": 2.765853
+    }
+  },
+  {
+    "variant": "baseline",
+    "stage": "baseline",
+    "run_name": "baseline_paper",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\baseline_paper\\weights\\best.pt",
+    "precision": "FP16",
+    "effective_model_dtype": "float16",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.626450499519706,
+      "e2e_p50": 7.253050003782846,
+      "e2e_p95": 10.186440001416484,
+      "preprocess_mean": 0.8870064991060644,
+      "inference_mean": 5.5045975001121406,
+      "postprocess_mean": 1.0321660002955468
+    },
+    "fps_e2e": 131.1225976046101,
+    "peak_allocated_mib": 73.69091796875,
+    "model": {
+      "parameters_m": 9.41667
+    }
+  },
+  {
+    "variant": "baseline",
+    "stage": "baseline",
+    "run_name": "baseline_paper_seed1",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\baseline_paper_seed1\\weights\\best.pt",
+    "precision": "FP16",
+    "effective_model_dtype": "float16",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 8.335242499961169,
+      "e2e_p50": 7.91919999755919,
+      "e2e_p95": 10.738524998305365,
+      "preprocess_mean": 0.9565590006241109,
+      "inference_mean": 6.017664000537479,
+      "postprocess_mean": 1.1321370000223396
+    },
+    "fps_e2e": 119.97251429753348,
+    "peak_allocated_mib": 80.65771484375,
+    "model": {
+      "parameters_m": 9.41667
+    }
+  },
+  {
+    "variant": "baseline",
+    "stage": "baseline",
+    "run_name": "baseline_paper_seed2",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\baseline_paper_seed2\\weights\\best.pt",
+    "precision": "FP16",
+    "effective_model_dtype": "float16",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.481500500434777,
+      "e2e_p50": 7.185749993368518,
+      "e2e_p95": 9.784849999414286,
+      "preprocess_mean": 0.8878380008536624,
+      "inference_mean": 5.4191770002944395,
+      "postprocess_mean": 0.9615264994499739
+    },
+    "fps_e2e": 133.66302654686535,
+    "peak_allocated_mib": 80.65771484375,
+    "model": {
+      "parameters_m": 9.41667
+    }
+  },
+  {
+    "variant": "full",
+    "stage": "full",
+    "run_name": "full_paper",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper\\weights\\best.pt",
+    "precision": "FP16",
+    "effective_model_dtype": "float16",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 6.925625500225578,
+      "e2e_p50": 6.517049994727131,
+      "e2e_p95": 9.719104992836925,
+      "preprocess_mean": 0.8328909992997069,
+      "inference_mean": 4.700258000084432,
+      "postprocess_mean": 1.1979790004261304
+    },
+    "fps_e2e": 144.39128999502333,
+    "peak_allocated_mib": 79.64892578125,
+    "model": {
+      "parameters_m": 2.765853
+    }
+  },
+  {
+    "variant": "full",
+    "stage": "full",
+    "run_name": "full_paper_seed1",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper_seed1\\weights\\best.pt",
+    "precision": "FP16",
+    "effective_model_dtype": "float16",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.094339500545175,
+      "e2e_p50": 6.684899999527261,
+      "e2e_p95": 9.399445010058106,
+      "preprocess_mean": 0.869214000631473,
+      "inference_mean": 4.768046000463073,
+      "postprocess_mean": 1.2606040002719965
+    },
+    "fps_e2e": 140.95744923444298,
+    "peak_allocated_mib": 66.9541015625,
+    "model": {
+      "parameters_m": 2.765853
+    }
+  },
+  {
+    "variant": "full",
+    "stage": "full",
+    "run_name": "full_paper_seed2",
+    "checkpoint": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper_seed2\\weights\\best.pt",
+    "precision": "FP16",
+    "effective_model_dtype": "float16",
+    "warmup": 50,
+    "repeats": 200,
+    "latency_ms": {
+      "e2e_mean": 7.724659999948926,
+      "e2e_p50": 7.042550001642667,
+      "e2e_p95": 11.932244996569347,
+      "preprocess_mean": 0.9945735003566369,
+      "inference_mean": 5.128822499973467,
+      "postprocess_mean": 1.3723694998043356
+    },
+    "fps_e2e": 129.45553590793793,
+    "peak_allocated_mib": 66.9541015625,
+    "model": {
+      "parameters_m": 2.765853
+    }
+  }
+]

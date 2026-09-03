@@ -1,0 +1,6 @@
+{
+  "images_with_predictions": 548,
+  "predictions": 156799,
+  "max_detections_per_image": 300,
+  "out_of_bounds_or_invalid": 0
+}

@@ -1,0 +1,3619 @@
+{
+  "schema_version": 1,
+  "calibrated_at": "2026-08-28T09:48:15+08:00",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\full_paper\\weights\\best.pt",
+    "sha256": "fb4484511d08c825bb112797c86fc0725ce6e05d8cf663576c7d74c25608689d"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "split": "train",
+    "selection": "512 evenly spaced sorted image paths",
+    "labels_read": false,
+    "calibration_images": 512,
+    "whole_input": 640,
+    "tile_size": 960,
+    "overlap": 0.2,
+    "candidate_area": "predicted area < 48^2 pixels",
+    "candidate_confidence": 0.05,
+    "tile_score": "sum of candidate confidence for centers inside tile"
+  },
+  "quantiles": {
+    "q20": 5.708433151245117,
+    "q30": 8.88822374343872
+  },
+  "distribution": {
+    "minimum": 0.0,
+    "mean": 20.647823024744866,
+    "median": 15.798103332519531,
+    "maximum": 103.8659439086914,
+    "zero_score_images": 4
+  },
+  "wall_time_s": 10.153323499951512,
+  "per_image": [
+    {
+      "file_name": "0000002_00005_d_0000014.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 64.0927505493164
+    },
+    {
+      "file_name": "0000008_04499_d_0000045.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 7.375189781188965
+    },
+    {
+      "file_name": "0000037_01494_d_0000052.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 103.8659439086914
+    },
+    {
+      "file_name": "0000042_02421_d_0000076.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 54.235870361328125
+    },
+    {
+      "file_name": "0000056_00727_d_0000111.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 62.91304016113281
+    },
+    {
+      "file_name": "0000068_03714_d_0000012.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 51.482154846191406
+    },
+    {
+      "file_name": "0000071_03281_d_0000004.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 18.417354583740234
+    },
+    {
+      "file_name": "0000072_04493_d_0000005.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 53.98894500732422
+    },
+    {
+      "file_name": "0000076_01012_d_0000004.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 5.8535380363464355
+    },
+    {
+      "file_name": "0000076_04925_d_0000017.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 0.0
+    },
+    {
+      "file_name": "0000084_00281_d_0000002.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 47.665077209472656
+    },
+    {
+      "file_name": "0000099_03156_d_0000007.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 2.8892300128936768
+    },
+    {
+      "file_name": "0000101_02927_d_0000019.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 5.329596519470215
+    },
+    {
+      "file_name": "0000107_01998_d_0000054.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 55.74128341674805
+    },
+    {
+      "file_name": "0000111_03678_d_0000072.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 12.013955116271973
+    },
+    {
+      "file_name": "0000125_00574_d_0000123.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 49.66345977783203
+    },
+    {
+      "file_name": "0000133_01764_d_0000144.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 11.227063179016113
+    },
+    {
+      "file_name": "0000136_01783_d_0000157.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 40.900917053222656
+    },
+    {
+      "file_name": "0000140_02277_d_0000005.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 58.21437454223633
+    },
+    {
+      "file_name": "0000142_00858_d_0000027.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 45.72590637207031
+    },
+    {
+      "file_name": "0000142_04058_d_0000043.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 68.82893371582031
+    },
+    {
+      "file_name": "0000144_00001_d_0000001.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 1.207167625427246
+    },
+    {
+      "file_name": "0000145_00401_d_0000001.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 1.680262804031372
+    },
+    {
+      "file_name": "0000150_01630_d_0000075.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 53.30546188354492
+    },
+    {
+      "file_name": "0000165_01325_d_0000090.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 15.777809143066406
+    },
+    {
+      "file_name": "0000165_05325_d_0000110.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 10.826107025146484
+    },
+    {
+      "file_name": "0000167_00584_d_0000127.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 10.00009822845459
+    },
+    {
+      "file_name": "0000170_00401_d_0000001.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 56.90029525756836
+    },
+    {
+      "file_name": "0000173_01180_d_0000001.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 52.70286178588867
+    },
+    {
+      "file_name": "0000175_00801_d_0000001.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 0.9357303380966187
+    },
+    {
+      "file_name": "0000178_01102_d_0000012.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 1.503179669380188
+    },
+    {
+      "file_name": "0000180_01213_d_0000025.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 5.065691947937012
+    },
+    {
+      "file_name": "0000182_00819_d_0000038.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 31.609683990478516
+    },
+    {
+      "file_name": "0000195_01418_d_0000133.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 31.04644203186035
+    },
+    {
+      "file_name": "0000197_00401_d_0000147.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 40.42610168457031
+    },
+    {
+      "file_name": "0000198_01629_d_0000160.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 11.283967971801758
+    },
+    {
+      "file_name": "0000201_00446_d_0000173.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 18.807415008544922
+    },
+    {
+      "file_name": "0000205_00405_d_0000197.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 48.849884033203125
+    },
+    {
+      "file_name": "0000209_00922_d_0000222.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 3.2556962966918945
+    },
+    {
+      "file_name": "0000214_01968_d_0000253.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 17.734907150268555
+    },
+    {
+      "file_name": "0000220_02000_d_0000006.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 8.633105278015137
+    },
+    {
+      "file_name": "0000221_01292_d_0000004.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 16.428956985473633
+    },
+    {
+      "file_name": "0000222_02000_d_0000007.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 16.382535934448242
+    },
+    {
+      "file_name": "0000223_01300_d_0000004.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 16.63797378540039
+    },
+    {
+      "file_name": "0000225_01555_d_0000005.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 26.029653549194336
+    },
+    {
+      "file_name": "0000226_00001_d_0000001.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 47.41712951660156
+    },
+    {
+      "file_name": "0000226_03899_d_0000014.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 32.16094207763672
+    },
+    {
+      "file_name": "0000229_00001_d_0000001.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 26.85460662841797
+    },
+    {
+      "file_name": "0000237_00442_d_0000002.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 9.237455368041992
+    },
+    {
+      "file_name": "0000239_04052_d_0000012.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 20.88833999633789
+    },
+    {
+      "file_name": "0000239_09866_d_0000025.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 33.58195495605469
+    },
+    {
+      "file_name": "0000240_02075_d_0000006.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 12.061145782470703
+    },
+    {
+      "file_name": "0000251_00450_d_0000003.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 38.4814453125
+    },
+    {
+      "file_name": "0000256_01210_d_0000022.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 26.99982261657715
+    },
+    {
+      "file_name": "0000256_03644_d_0000035.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 21.86077880859375
+    },
+    {
+      "file_name": "0000257_01607_d_0000050.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 0.0
+    },
+    {
+      "file_name": "0000257_03964_d_0000063.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 19.07005500793457
+    },
+    {
+      "file_name": "0000258_02119_d_0000076.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 16.04650115966797
+    },
+    {
+      "file_name": "0000260_03359_d_0000115.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 19.675722122192383
+    },
+    {
+      "file_name": "0000261_02501_d_0000128.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 3.8610987663269043
+    },
+    {
+      "file_name": "0000261_05775_d_0000140.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 25.924510955810547
+    },
+    {
+      "file_name": "0000264_00201_d_0000195.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 19.500337600708008
+    },
+    {
+      "file_name": "0000264_02801_d_0000208.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 11.03465461730957
+    },
+    {
+      "file_name": "0000270_00401_d_0000355.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 36.91830062866211
+    },
+    {
+      "file_name": "0000275_00201_d_0000498.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 23.443008422851562
+    },
+    {
+      "file_name": "0000279_01801_d_0000593.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 55.271881103515625
+    },
+    {
+      "file_name": "0000281_00601_d_0000631.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 33.29450607299805
+    },
+    {
+      "file_name": "0000284_03801_d_0000691.jpg",
+      "width": 1920,
+      "height": 1080,
+      "tiles": 6,
+      "max_density_score": 8.023030281066895
+    },
+    {
+      "file_name": "0000288_03601_d_0000802.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 33.27772521972656
+    },
+    {
+      "file_name": "0000290_00801_d_0000852.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 39.0180778503418
+    },
+    {
+      "file_name": "0000293_01001_d_0000927.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 72.48529052734375
+    },
+    {
+      "file_name": "0000300_00601_d_0000141.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 37.47291564941406
+    },
+    {
+      "file_name": "0000303_00601_d_0000186.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 56.46180725097656
+    },
+    {
+      "file_name": "0000305_00401_d_0000215.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 23.039756774902344
+    },
+    {
+      "file_name": "0000305_04601_d_0000236.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 4.994257926940918
+    },
+    {
+      "file_name": "0000308_00401_d_0000307.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 20.908723831176758
+    },
+    {
+      "file_name": "0000309_00601_d_0000336.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 36.23884582519531
+    },
+    {
+      "file_name": "0000309_03201_d_0000349.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 33.541080474853516
+    },
+    {
+      "file_name": "0000313_01601_d_0000444.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 24.34662628173828
+    },
+    {
+      "file_name": "0000313_06001_d_0000466.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 40.95781707763672
+    },
+    {
+      "file_name": "0000318_03401_d_0000571.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 28.652597427368164
+    },
+    {
+      "file_name": "0000325_01201_d_0000668.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 17.732376098632812
+    },
+    {
+      "file_name": "0000325_04001_d_0000682.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 46.5169792175293
+    },
+    {
+      "file_name": "0000326_00201_d_0000697.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 13.627032279968262
+    },
+    {
+      "file_name": "0000329_06401_d_0000797.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 10.377904891967773
+    },
+    {
+      "file_name": "0000331_01001_d_0000829.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 9.926580429077148
+    },
+    {
+      "file_name": "0000331_03001_d_0000856.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 44.86310577392578
+    },
+    {
+      "file_name": "0000334_01569_d_0000029.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 45.82985305786133
+    },
+    {
+      "file_name": "0000334_04117_d_0000042.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 60.26466751098633
+    },
+    {
+      "file_name": "0000339_00001_d_0000161.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 29.90326499938965
+    },
+    {
+      "file_name": "0000339_02745_d_0000175.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 46.17596435546875
+    },
+    {
+      "file_name": "0000342_02353_d_0000254.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 14.446145057678223
+    },
+    {
+      "file_name": "0000342_04705_d_0000266.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 7.7133708000183105
+    },
+    {
+      "file_name": "0000344_01765_d_0000302.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 15.818397521972656
+    },
+    {
+      "file_name": "0000345_01177_d_0000315.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 41.101898193359375
+    },
+    {
+      "file_name": "0000348_01961_d_0000416.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 17.77773094177246
+    },
+    {
+      "file_name": "0000348_05489_d_0000434.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 6.471279144287109
+    },
+    {
+      "file_name": "0000349_05881_d_0000470.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 7.185505390167236
+    },
+    {
+      "file_name": "0000351_02353_d_0000531.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 40.79754638671875
+    },
+    {
+      "file_name": "0000352_01177_d_0000545.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 45.364627838134766
+    },
+    {
+      "file_name": "0000352_04117_d_0000560.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 37.98253631591797
+    },
+    {
+      "file_name": "0000352_06469_d_0000572.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 21.690195083618164
+    },
+    {
+      "file_name": "0000361_00589_d_0000756.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 41.153995513916016
+    },
+    {
+      "file_name": "0000363_02549_d_0000795.jpg",
+      "width": 960,
+      "height": 540,
+      "tiles": 1,
+      "max_density_score": 21.536787033081055
+    },
+    {
+      "file_name": "0000366_04117_d_0000798.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 66.29437255859375
+    },
+    {
+      "file_name": "0000366_09605_d_0000817.jpg",
+      "width": 1360,
+      "height": 765,
+      "tiles": 2,
+      "max_density_score": 93.7691650390625
+    },
+    {
+      "file_name": "9999937_00000_d_0000011.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 59.16038513183594
+    },
+    {
+      "file_name": "9999937_00000_d_0000023.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 34.71271514892578
+    },
+    {
+      "file_name": "9999937_00000_d_0000036.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 6.883492469787598
+    },
+    {
+      "file_name": "9999937_00000_d_0000049.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 8.994375228881836
+    },
+    {
+      "file_name": "9999937_00000_d_0000061.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 8.129700660705566
+    },
+    {
+      "file_name": "9999937_00000_d_0000074.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 13.767366409301758
+    },
+    {
+      "file_name": "9999937_00000_d_0000087.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 13.447294235229492
+    },
+    {
+      "file_name": "9999937_00000_d_0000099.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 6.487249374389648
+    },
+    {
+      "file_name": "9999937_00000_d_0000112.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 11.400162696838379
+    },
+    {
+      "file_name": "9999937_00000_d_0000125.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 21.416770935058594
+    },
+    {
+      "file_name": "9999937_00000_d_0000137.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 3.1752235889434814
+    },
+    {
+      "file_name": "9999937_00000_d_0000150.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 2.091536045074463
+    },
+    {
+      "file_name": "9999937_00000_d_0000163.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 16.432016372680664
+    },
+    {
+      "file_name": "9999937_00000_d_0000175.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 3.937614679336548
+    },
+    {
+      "file_name": "9999937_00000_d_0000188.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 17.261024475097656
+    },
+    {
+      "file_name": "9999937_00000_d_0000201.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 6.421514511108398
+    },
+    {
+      "file_name": "9999937_00000_d_0000213.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 16.371156692504883
+    },
+    {
+      "file_name": "9999937_00000_d_0000226.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 13.515910148620605
+    },
+    {
+      "file_name": "9999940_00000_d_0000011.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 25.345378875732422
+    },
+    {
+      "file_name": "9999940_00000_d_0000023.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 14.378410339355469
+    },
+    {
+      "file_name": "9999940_00000_d_0000036.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 20.228811264038086
+    },
+    {
+      "file_name": "9999940_00000_d_0000049.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 35.45562744140625
+    },
+    {
+      "file_name": "9999940_00000_d_0000061.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 37.29387664794922
+    },
+    {
+      "file_name": "9999940_00000_d_0000074.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 22.646718978881836
+    },
+    {
+      "file_name": "9999940_00000_d_0000086.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 36.950801849365234
+    },
+    {
+      "file_name": "9999940_00000_d_0000099.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 9.816549301147461
+    },
+    {
+      "file_name": "9999942_00000_d_0000011.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 15.605165481567383
+    },
+    {
+      "file_name": "9999942_00000_d_0000023.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.759040832519531
+    },
+    {
+      "file_name": "9999942_00000_d_0000036.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 10.472406387329102
+    },
+    {
+      "file_name": "9999942_00000_d_0000049.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 15.447593688964844
+    },
+    {
+      "file_name": "9999942_00000_d_0000061.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 50.51762390136719
+    },
+    {
+      "file_name": "9999942_00000_d_0000074.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 14.681591033935547
+    },
+    {
+      "file_name": "9999942_00000_d_0000087.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.717913627624512
+    },
+    {
+      "file_name": "9999942_00000_d_0000099.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.282726287841797
+    },
+    {
+      "file_name": "9999942_00000_d_0000112.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.3034868240356445
+    },
+    {
+      "file_name": "9999942_00000_d_0000125.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 10.00896167755127
+    },
+    {
+      "file_name": "9999942_00000_d_0000137.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 39.2239990234375
+    },
+    {
+      "file_name": "9999942_00000_d_0000150.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 6.566451072692871
+    },
+    {
+      "file_name": "9999942_00000_d_0000163.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.465343475341797
+    },
+    {
+      "file_name": "9999942_00000_d_0000175.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.701642990112305
+    },
+    {
+      "file_name": "9999942_00000_d_0000188.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.6786863803863525
+    },
+    {
+      "file_name": "9999942_00000_d_0000201.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 14.860280990600586
+    },
+    {
+      "file_name": "9999942_00000_d_0000213.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 11.796552658081055
+    },
+    {
+      "file_name": "9999942_00000_d_0000226.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.423316478729248
+    },
+    {
+      "file_name": "9999942_00000_d_0000239.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 3.750033378601074
+    },
+    {
+      "file_name": "9999942_00000_d_0000251.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 16.352413177490234
+    },
+    {
+      "file_name": "9999942_00000_d_0000264.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.934854984283447
+    },
+    {
+      "file_name": "9999943_00000_d_0000007.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.506946086883545
+    },
+    {
+      "file_name": "9999943_00000_d_0000019.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 27.099172592163086
+    },
+    {
+      "file_name": "9999943_00000_d_0000032.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 30.732229232788086
+    },
+    {
+      "file_name": "9999943_00000_d_0000045.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.62200164794922
+    },
+    {
+      "file_name": "9999943_00000_d_0000057.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.60554313659668
+    },
+    {
+      "file_name": "9999943_00000_d_0000070.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 24.580509185791016
+    },
+    {
+      "file_name": "9999943_00000_d_0000083.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.3375084400177
+    },
+    {
+      "file_name": "9999945_00000_d_0000003.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 56.42486572265625
+    },
+    {
+      "file_name": "9999945_00000_d_0000016.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.028993606567383
+    },
+    {
+      "file_name": "9999945_00000_d_0000029.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 1.6519129276275635
+    },
+    {
+      "file_name": "9999945_00000_d_0000041.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 27.146238327026367
+    },
+    {
+      "file_name": "9999945_00000_d_0000054.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 20.277523040771484
+    },
+    {
+      "file_name": "9999945_00000_d_0000067.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 17.86977195739746
+    },
+    {
+      "file_name": "9999945_00000_d_0000079.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 17.07090950012207
+    },
+    {
+      "file_name": "9999945_00000_d_0000092.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 27.438873291015625
+    },
+    {
+      "file_name": "9999945_00000_d_0000105.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 56.616573333740234
+    },
+    {
+      "file_name": "9999945_00000_d_0000117.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 27.908872604370117
+    },
+    {
+      "file_name": "9999945_00000_d_0000130.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.398897171020508
+    },
+    {
+      "file_name": "9999945_00000_d_0000143.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.169046401977539
+    },
+    {
+      "file_name": "9999945_00000_d_0000155.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.817033767700195
+    },
+    {
+      "file_name": "9999945_00000_d_0000168.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.2654900550842285
+    },
+    {
+      "file_name": "9999948_00000_d_0000002.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 33.97786331176758
+    },
+    {
+      "file_name": "9999948_00000_d_0000014.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 10.321819305419922
+    },
+    {
+      "file_name": "9999948_00000_d_0000027.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.628662109375
+    },
+    {
+      "file_name": "9999948_00000_d_0000040.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 32.69196319580078
+    },
+    {
+      "file_name": "9999950_00000_d_0000011.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 6.263126850128174
+    },
+    {
+      "file_name": "9999950_00000_d_0000024.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.82548588514328
+    },
+    {
+      "file_name": "9999950_00000_d_0000037.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.138957500457764
+    },
+    {
+      "file_name": "9999950_00000_d_0000049.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.455976486206055
+    },
+    {
+      "file_name": "9999950_00000_d_0000062.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 16.93138885498047
+    },
+    {
+      "file_name": "9999950_00000_d_0000075.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.51929759979248
+    },
+    {
+      "file_name": "9999950_00000_d_1007082.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 12.112874984741211
+    },
+    {
+      "file_name": "9999951_00000_d_0000010.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 22.845977783203125
+    },
+    {
+      "file_name": "9999951_00000_d_0000023.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 44.27104949951172
+    },
+    {
+      "file_name": "9999951_00000_d_0000035.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 9.907837867736816
+    },
+    {
+      "file_name": "9999951_00000_d_0000048.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 7.549836158752441
+    },
+    {
+      "file_name": "9999951_00000_d_0000061.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 26.233562469482422
+    },
+    {
+      "file_name": "9999951_00000_d_0000073.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 12.566088676452637
+    },
+    {
+      "file_name": "9999951_00000_d_0000086.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 16.948993682861328
+    },
+    {
+      "file_name": "9999951_00000_d_0000098.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 8.026599884033203
+    },
+    {
+      "file_name": "9999951_00000_d_0000111.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 1.1023743152618408
+    },
+    {
+      "file_name": "9999951_00000_d_0000124.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 6.6192731857299805
+    },
+    {
+      "file_name": "9999951_00000_d_0000136.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.2786896228790283
+    },
+    {
+      "file_name": "9999951_00000_d_0000149.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 23.890703201293945
+    },
+    {
+      "file_name": "9999951_00000_d_0000162.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.1031696796417236
+    },
+    {
+      "file_name": "9999951_00000_d_0000174.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 35.589820861816406
+    },
+    {
+      "file_name": "9999951_00000_d_0000187.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.5632247924804688
+    },
+    {
+      "file_name": "9999951_00000_d_0000200.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 31.366981506347656
+    },
+    {
+      "file_name": "9999951_00000_d_0000212.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 45.541221618652344
+    },
+    {
+      "file_name": "9999951_00000_d_0000225.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 41.005558013916016
+    },
+    {
+      "file_name": "9999951_00000_d_0000238.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 28.152069091796875
+    },
+    {
+      "file_name": "9999951_00000_d_0000250.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 10.988420486450195
+    },
+    {
+      "file_name": "9999951_00000_d_0000263.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.4666318893432617
+    },
+    {
+      "file_name": "9999951_00000_d_0000276.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 22.848773956298828
+    },
+    {
+      "file_name": "9999951_00000_d_0000288.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 43.62541198730469
+    },
+    {
+      "file_name": "9999951_00000_d_0000301.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 53.718807220458984
+    },
+    {
+      "file_name": "9999951_00000_d_0000314.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 16.103885650634766
+    },
+    {
+      "file_name": "9999951_00000_d_0000326.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 27.637022018432617
+    },
+    {
+      "file_name": "9999953_00000_d_0000005.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 3.1031060218811035
+    },
+    {
+      "file_name": "9999953_00000_d_0000018.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 3.0213558673858643
+    },
+    {
+      "file_name": "9999953_00000_d_0000030.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 14.90185832977295
+    },
+    {
+      "file_name": "9999953_00000_d_0000043.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 3.6689553260803223
+    },
+    {
+      "file_name": "9999953_00000_d_0000056.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 0.4927407503128052
+    },
+    {
+      "file_name": "9999953_00000_d_0000068.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 5.1569294929504395
+    },
+    {
+      "file_name": "9999953_00000_d_0000081.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 8.270474433898926
+    },
+    {
+      "file_name": "9999953_00000_d_0000094.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 0.4185241460800171
+    },
+    {
+      "file_name": "9999953_00000_d_0000106.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 10.454766273498535
+    },
+    {
+      "file_name": "9999953_00000_d_0000119.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 6.732496738433838
+    },
+    {
+      "file_name": "9999953_00000_d_0000132.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 18.87990951538086
+    },
+    {
+      "file_name": "9999953_00000_d_0000144.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 3.593510389328003
+    },
+    {
+      "file_name": "9999953_00000_d_0000157.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 6.736878871917725
+    },
+    {
+      "file_name": "9999953_00000_d_0000170.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 0.9419465661048889
+    },
+    {
+      "file_name": "9999953_00000_d_0000182.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 0.1362626552581787
+    },
+    {
+      "file_name": "9999953_00000_d_0000195.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.5019915103912354
+    },
+    {
+      "file_name": "9999953_00000_d_0000208.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 3.3702616691589355
+    },
+    {
+      "file_name": "9999953_00000_d_0000220.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 4.93577766418457
+    },
+    {
+      "file_name": "9999953_00000_d_0000233.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.7816243171691895
+    },
+    {
+      "file_name": "9999955_00000_d_0000013.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 8.345319747924805
+    },
+    {
+      "file_name": "9999955_00000_d_0000025.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 47.46308517456055
+    },
+    {
+      "file_name": "9999955_00000_d_0000038.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 48.28865051269531
+    },
+    {
+      "file_name": "9999955_00000_d_0000051.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 21.680761337280273
+    },
+    {
+      "file_name": "9999955_00000_d_0000063.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 7.37490701675415
+    },
+    {
+      "file_name": "9999955_00000_d_0000076.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 15.193986892700195
+    },
+    {
+      "file_name": "9999955_00000_d_0000089.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 9.04483413696289
+    },
+    {
+      "file_name": "9999955_00000_d_0000101.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 25.438730239868164
+    },
+    {
+      "file_name": "9999955_00000_d_0000114.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 12.284229278564453
+    },
+    {
+      "file_name": "9999955_00000_d_0000127.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 0.3782150447368622
+    },
+    {
+      "file_name": "9999955_00000_d_0000139.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 14.735847473144531
+    },
+    {
+      "file_name": "9999955_00000_d_0000152.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 36.04410171508789
+    },
+    {
+      "file_name": "9999955_00000_d_0000165.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 11.45663070678711
+    },
+    {
+      "file_name": "9999955_00000_d_0000177.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 12.916189193725586
+    },
+    {
+      "file_name": "9999955_00000_d_0000190.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 24.806377410888672
+    },
+    {
+      "file_name": "9999955_00000_d_0000203.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 55.69609069824219
+    },
+    {
+      "file_name": "9999955_00000_d_0000215.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 55.65167999267578
+    },
+    {
+      "file_name": "9999955_00000_d_0000228.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 28.26190185546875
+    },
+    {
+      "file_name": "9999955_00000_d_0000241.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 33.637245178222656
+    },
+    {
+      "file_name": "9999955_00000_d_0000253.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 22.576539993286133
+    },
+    {
+      "file_name": "9999955_00000_d_0000266.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 9.020198822021484
+    },
+    {
+      "file_name": "9999955_00000_d_0000279.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 12.33997631072998
+    },
+    {
+      "file_name": "9999955_00000_d_0000291.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 8.333881378173828
+    },
+    {
+      "file_name": "9999955_00000_d_0000304.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 17.585668563842773
+    },
+    {
+      "file_name": "9999955_00000_d_0000317.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 35.33418273925781
+    },
+    {
+      "file_name": "9999955_00000_d_0000329.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 12.652436256408691
+    },
+    {
+      "file_name": "9999955_00000_d_0000342.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 21.68463706970215
+    },
+    {
+      "file_name": "9999955_00000_d_0000354.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 42.607181549072266
+    },
+    {
+      "file_name": "9999955_00000_d_0000367.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 35.69340515136719
+    },
+    {
+      "file_name": "9999955_00000_d_0000380.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 21.572296142578125
+    },
+    {
+      "file_name": "9999955_00000_d_0000392.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 22.337732315063477
+    },
+    {
+      "file_name": "9999955_00000_d_0000405.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 5.643192291259766
+    },
+    {
+      "file_name": "9999955_00000_d_0000418.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 21.006641387939453
+    },
+    {
+      "file_name": "9999955_00000_d_0000430.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 27.036182403564453
+    },
+    {
+      "file_name": "9999956_00000_d_0000009.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 9.61941909790039
+    },
+    {
+      "file_name": "9999956_00000_d_0000022.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 20.875659942626953
+    },
+    {
+      "file_name": "9999956_00000_d_0000034.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 2.9583253860473633
+    },
+    {
+      "file_name": "9999956_00000_d_0000047.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 11.965795516967773
+    },
+    {
+      "file_name": "9999956_00000_d_0000060.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 6.686193466186523
+    },
+    {
+      "file_name": "9999956_00000_d_0000072.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 27.285531997680664
+    },
+    {
+      "file_name": "9999956_00000_d_0000085.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 15.07031536102295
+    },
+    {
+      "file_name": "9999956_00000_d_0000098.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 20.468149185180664
+    },
+    {
+      "file_name": "9999956_00000_d_0000110.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 12.080368041992188
+    },
+    {
+      "file_name": "9999960_00000_d_0000005.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.3142125904560089
+    },
+    {
+      "file_name": "9999960_00000_d_0000018.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.882144927978516
+    },
+    {
+      "file_name": "9999960_00000_d_0000030.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.21635819971561432
+    },
+    {
+      "file_name": "9999960_00000_d_0000043.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 6.934367656707764
+    },
+    {
+      "file_name": "9999960_00000_d_0000056.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.4660826623439789
+    },
+    {
+      "file_name": "9999960_00000_d_0000068.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.992420196533203
+    },
+    {
+      "file_name": "9999960_00000_d_0000081.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 3.982980966567993
+    },
+    {
+      "file_name": "9999960_00000_d_0000094.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 15.22685432434082
+    },
+    {
+      "file_name": "9999960_00000_d_0000106.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 1.0712451934814453
+    },
+    {
+      "file_name": "9999960_00000_d_0000119.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.423888206481934
+    },
+    {
+      "file_name": "9999960_00000_d_0000132.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.0
+    },
+    {
+      "file_name": "9999960_00000_d_0000144.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.952999114990234
+    },
+    {
+      "file_name": "9999960_00000_d_0000157.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.487548828125
+    },
+    {
+      "file_name": "9999960_00000_d_0000170.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 34.487037658691406
+    },
+    {
+      "file_name": "9999960_00000_d_0000182.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.754108428955078
+    },
+    {
+      "file_name": "9999962_00000_d_0000010.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 13.270238876342773
+    },
+    {
+      "file_name": "9999962_00000_d_0000023.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.26980209350586
+    },
+    {
+      "file_name": "9999962_00000_d_0000035.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 13.929819107055664
+    },
+    {
+      "file_name": "9999962_00000_d_0000048.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.583524703979492
+    },
+    {
+      "file_name": "9999962_00000_d_0000061.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 25.265853881835938
+    },
+    {
+      "file_name": "9999962_00000_d_0000073.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.67200756072998
+    },
+    {
+      "file_name": "9999962_00000_d_0000086.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 34.787078857421875
+    },
+    {
+      "file_name": "9999962_00000_d_0000099.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.078332901000977
+    },
+    {
+      "file_name": "9999962_00000_d_0000111.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 11.610921859741211
+    },
+    {
+      "file_name": "9999962_00000_d_0000124.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.9258365631103516
+    },
+    {
+      "file_name": "9999962_00000_d_0000137.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 39.732547760009766
+    },
+    {
+      "file_name": "9999962_00000_d_0000149.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 1.9118669033050537
+    },
+    {
+      "file_name": "9999962_00000_d_0000162.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.414644241333008
+    },
+    {
+      "file_name": "9999964_00000_d_0000009.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 21.91657257080078
+    },
+    {
+      "file_name": "9999964_00000_d_0000021.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 37.74867248535156
+    },
+    {
+      "file_name": "9999964_00000_d_0000034.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.512772560119629
+    },
+    {
+      "file_name": "9999964_00000_d_0000047.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 29.601238250732422
+    },
+    {
+      "file_name": "9999964_00000_d_0000059.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 41.33671569824219
+    },
+    {
+      "file_name": "9999964_00000_d_0000072.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 11.124490737915039
+    },
+    {
+      "file_name": "9999965_00000_d_0000001.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 27.905000686645508
+    },
+    {
+      "file_name": "9999965_00000_d_0000013.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 30.174278259277344
+    },
+    {
+      "file_name": "9999965_00000_d_0000026.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 70.72355651855469
+    },
+    {
+      "file_name": "9999965_00000_d_0000039.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 45.54320526123047
+    },
+    {
+      "file_name": "9999965_00000_d_0000051.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 81.69857025146484
+    },
+    {
+      "file_name": "9999965_00000_d_0000064.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 15.974050521850586
+    },
+    {
+      "file_name": "9999965_00000_d_0000077.jpg",
+      "width": 1400,
+      "height": 788,
+      "tiles": 2,
+      "max_density_score": 65.78977966308594
+    },
+    {
+      "file_name": "9999966_00000_d_0000010.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 24.080551147460938
+    },
+    {
+      "file_name": "9999966_00000_d_0000023.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 16.689329147338867
+    },
+    {
+      "file_name": "9999966_00000_d_0000036.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 47.75257110595703
+    },
+    {
+      "file_name": "9999966_00000_d_0000048.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.871307373046875
+    },
+    {
+      "file_name": "9999966_00000_d_0000061.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 6.487029552459717
+    },
+    {
+      "file_name": "9999966_00000_d_0000074.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.591338634490967
+    },
+    {
+      "file_name": "9999966_00000_d_0000086.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.705266952514648
+    },
+    {
+      "file_name": "9999966_00000_d_0000099.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.499154090881348
+    },
+    {
+      "file_name": "9999966_00000_d_0000111.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 10.194656372070312
+    },
+    {
+      "file_name": "9999966_00000_d_0000124.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.038464307785034
+    },
+    {
+      "file_name": "9999966_00000_d_0000137.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 15.049753189086914
+    },
+    {
+      "file_name": "9999967_00000_d_0000009.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.259716033935547
+    },
+    {
+      "file_name": "9999967_00000_d_0000022.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 39.75838851928711
+    },
+    {
+      "file_name": "9999967_00000_d_0000035.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 21.89120864868164
+    },
+    {
+      "file_name": "9999967_00000_d_0000047.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 20.46615982055664
+    },
+    {
+      "file_name": "9999967_00000_d_0000060.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 37.686492919921875
+    },
+    {
+      "file_name": "9999969_00000_d_0000006.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 30.161710739135742
+    },
+    {
+      "file_name": "9999969_00000_d_0000018.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 30.60537338256836
+    },
+    {
+      "file_name": "9999969_00000_d_0000031.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 31.334199905395508
+    },
+    {
+      "file_name": "9999969_00000_d_0000044.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.5710623860359192
+    },
+    {
+      "file_name": "9999969_00000_d_0000056.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 35.20966720581055
+    },
+    {
+      "file_name": "9999969_00000_d_0000069.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 20.601903915405273
+    },
+    {
+      "file_name": "9999970_00000_d_0000012.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 44.28514099121094
+    },
+    {
+      "file_name": "9999970_00000_d_0000024.jpg",
+      "width": 1398,
+      "height": 1048,
+      "tiles": 4,
+      "max_density_score": 33.71388626098633
+    },
+    {
+      "file_name": "9999970_00000_d_0000037.jpg",
+      "width": 1398,
+      "height": 1048,
+      "tiles": 4,
+      "max_density_score": 14.777655601501465
+    },
+    {
+      "file_name": "9999972_00000_d_0000003.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 3.702256679534912
+    },
+    {
+      "file_name": "9999972_00000_d_0000015.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 1.7285208702087402
+    },
+    {
+      "file_name": "9999972_00000_d_0000028.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 2.097703456878662
+    },
+    {
+      "file_name": "9999972_00000_d_0000041.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 2.04097843170166
+    },
+    {
+      "file_name": "9999972_00000_d_0000053.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 0.13472042977809906
+    },
+    {
+      "file_name": "9999972_00000_d_0000066.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 3.8262267112731934
+    },
+    {
+      "file_name": "9999972_00000_d_0000079.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 9.514718055725098
+    },
+    {
+      "file_name": "9999972_00000_d_0000091.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 1.573245644569397
+    },
+    {
+      "file_name": "9999972_00000_d_0000104.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 5.279374599456787
+    },
+    {
+      "file_name": "9999972_00000_d_0000117.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 1.8158468008041382
+    },
+    {
+      "file_name": "9999972_00000_d_0000129.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 9.910614967346191
+    },
+    {
+      "file_name": "9999972_00000_d_0000142.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 17.07582664489746
+    },
+    {
+      "file_name": "9999972_00000_d_0000155.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 5.735593795776367
+    },
+    {
+      "file_name": "9999974_00000_d_0000005.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 4.889220237731934
+    },
+    {
+      "file_name": "9999974_00000_d_0000018.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 10.37157917022705
+    },
+    {
+      "file_name": "9999974_00000_d_0000031.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 2.1131653785705566
+    },
+    {
+      "file_name": "9999974_00000_d_0000043.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 7.911993026733398
+    },
+    {
+      "file_name": "9999974_00000_d_0000056.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 11.696418762207031
+    },
+    {
+      "file_name": "9999975_00000_d_0000012.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 51.041648864746094
+    },
+    {
+      "file_name": "9999975_00000_d_0000024.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 17.67439079284668
+    },
+    {
+      "file_name": "9999977_00000_d_0000003.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 18.9392032623291
+    },
+    {
+      "file_name": "9999977_00000_d_0000016.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 16.043149948120117
+    },
+    {
+      "file_name": "9999977_00000_d_0000028.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 8.674470901489258
+    },
+    {
+      "file_name": "9999977_00000_d_0000041.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 22.83207130432129
+    },
+    {
+      "file_name": "9999977_00000_d_0000054.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 6.735775470733643
+    },
+    {
+      "file_name": "9999977_00000_d_0000066.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 12.48460865020752
+    },
+    {
+      "file_name": "9999977_00000_d_0000079.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 15.637640953063965
+    },
+    {
+      "file_name": "9999977_00000_d_0000092.jpg",
+      "width": 1916,
+      "height": 1078,
+      "tiles": 6,
+      "max_density_score": 11.44758129119873
+    },
+    {
+      "file_name": "9999981_00000_d_0000003.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.9325532913208
+    },
+    {
+      "file_name": "9999981_00000_d_0000016.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 14.545367240905762
+    },
+    {
+      "file_name": "9999981_00000_d_0000029.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.834320068359375
+    },
+    {
+      "file_name": "9999981_00000_d_0000041.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.08562660217285
+    },
+    {
+      "file_name": "9999981_00000_d_0000054.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.344776153564453
+    },
+    {
+      "file_name": "9999981_00000_d_0000067.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 0.3497966229915619
+    },
+    {
+      "file_name": "9999981_00000_d_0000079.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 26.479183197021484
+    },
+    {
+      "file_name": "9999981_00000_d_0000092.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 16.79242706298828
+    },
+    {
+      "file_name": "9999981_00000_d_0000105.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.442605972290039
+    },
+    {
+      "file_name": "9999981_00000_d_0000117.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 45.313072204589844
+    },
+    {
+      "file_name": "9999981_00000_d_0000130.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.2453157901763916
+    },
+    {
+      "file_name": "9999981_00000_d_0000143.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.054072856903076
+    },
+    {
+      "file_name": "9999981_00000_d_0000155.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.259866714477539
+    },
+    {
+      "file_name": "9999982_00000_d_0000011.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 13.137754440307617
+    },
+    {
+      "file_name": "9999982_00000_d_0000024.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 3.259014129638672
+    },
+    {
+      "file_name": "9999982_00000_d_0000036.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.2522382736206055
+    },
+    {
+      "file_name": "9999982_00000_d_0000049.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.0717570781707764
+    },
+    {
+      "file_name": "9999982_00000_d_0000061.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 39.66351318359375
+    },
+    {
+      "file_name": "9999982_00000_d_0000074.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 71.62970733642578
+    },
+    {
+      "file_name": "9999982_00000_d_0000087.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 17.961456298828125
+    },
+    {
+      "file_name": "9999982_00000_d_0000099.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.056659698486328
+    },
+    {
+      "file_name": "9999982_00000_d_0000112.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 15.684510231018066
+    },
+    {
+      "file_name": "9999982_00000_d_0000125.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 16.687299728393555
+    },
+    {
+      "file_name": "9999982_00000_d_0000137.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 45.663970947265625
+    },
+    {
+      "file_name": "9999982_00000_d_0000150.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 28.552825927734375
+    },
+    {
+      "file_name": "9999982_00000_d_0000163.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 17.29827117919922
+    },
+    {
+      "file_name": "9999982_00000_d_0000175.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 20.88096809387207
+    },
+    {
+      "file_name": "9999982_00000_d_0000188.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.174928188323975
+    },
+    {
+      "file_name": "9999982_00000_d_0000201.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 10.56676197052002
+    },
+    {
+      "file_name": "9999982_00000_d_0000213.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 28.67898941040039
+    },
+    {
+      "file_name": "9999982_00000_d_0000226.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 42.15007781982422
+    },
+    {
+      "file_name": "9999982_00000_d_0000239.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 33.065773010253906
+    },
+    {
+      "file_name": "9999982_00000_d_0000251.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 32.60048294067383
+    },
+    {
+      "file_name": "9999984_00000_d_0000007.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.93880033493042
+    },
+    {
+      "file_name": "9999984_00000_d_0000020.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 12.49178409576416
+    },
+    {
+      "file_name": "9999984_00000_d_0000032.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 10.459803581237793
+    },
+    {
+      "file_name": "9999984_00000_d_0000045.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 7.7757649421691895
+    },
+    {
+      "file_name": "9999984_00000_d_0000058.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 17.998849868774414
+    },
+    {
+      "file_name": "9999984_00000_d_0000070.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.651996612548828
+    },
+    {
+      "file_name": "9999984_00000_d_0000083.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 21.1109561920166
+    },
+    {
+      "file_name": "9999984_00000_d_0000096.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 28.775671005249023
+    },
+    {
+      "file_name": "9999984_00000_d_0000108.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.43804359436035
+    },
+    {
+      "file_name": "9999984_00000_d_0000121.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.622994899749756
+    },
+    {
+      "file_name": "9999984_00000_d_0000134.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 45.13288497924805
+    },
+    {
+      "file_name": "9999984_00000_d_0000146.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 24.8721981048584
+    },
+    {
+      "file_name": "9999984_00000_d_0000159.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 16.46240234375
+    },
+    {
+      "file_name": "9999984_00000_d_0000172.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.887483596801758
+    },
+    {
+      "file_name": "9999985_00000_d_0000009.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.8641939163208
+    },
+    {
+      "file_name": "9999985_00000_d_0000022.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.5272467136383057
+    },
+    {
+      "file_name": "9999985_00000_d_0000035.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.62188720703125
+    },
+    {
+      "file_name": "9999985_00000_d_0000047.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 6.22136116027832
+    },
+    {
+      "file_name": "9999985_00000_d_0000060.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 34.976829528808594
+    },
+    {
+      "file_name": "9999985_00000_d_0000073.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 5.698731899261475
+    },
+    {
+      "file_name": "9999987_00000_d_0000006.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 47.78461456298828
+    },
+    {
+      "file_name": "9999987_00000_d_0000019.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 13.18959903717041
+    },
+    {
+      "file_name": "9999987_00000_d_0000032.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 18.414669036865234
+    },
+    {
+      "file_name": "9999987_00000_d_0000044.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 81.23165130615234
+    },
+    {
+      "file_name": "9999987_00000_d_0000057.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 71.36933898925781
+    },
+    {
+      "file_name": "9999987_00000_d_1008236.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.141200065612793
+    },
+    {
+      "file_name": "9999989_00000_d_0000012.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.6075358390808105
+    },
+    {
+      "file_name": "9999990_00000_d_0000012.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 11.081756591796875
+    },
+    {
+      "file_name": "9999990_00000_d_0000025.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 13.352659225463867
+    },
+    {
+      "file_name": "9999990_00000_d_0000037.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 34.16796875
+    },
+    {
+      "file_name": "9999990_00000_d_0000050.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.9102783203125
+    },
+    {
+      "file_name": "9999990_00000_d_0000063.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 39.52387619018555
+    },
+    {
+      "file_name": "9999990_00000_d_0000075.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 48.620643615722656
+    },
+    {
+      "file_name": "9999991_00000_d_0000007.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 44.02473068237305
+    },
+    {
+      "file_name": "9999991_00000_d_0000020.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 19.24152374267578
+    },
+    {
+      "file_name": "9999991_00000_d_0000034.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 13.372320175170898
+    },
+    {
+      "file_name": "9999994_00000_d_0000012.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 24.074298858642578
+    },
+    {
+      "file_name": "9999994_00000_d_0000025.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 9.769189834594727
+    },
+    {
+      "file_name": "9999994_00000_d_0000037.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 45.86579132080078
+    },
+    {
+      "file_name": "9999994_00000_d_0000050.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 58.03733825683594
+    },
+    {
+      "file_name": "9999994_00000_d_0000063.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 40.56144714355469
+    },
+    {
+      "file_name": "9999994_00000_d_0000075.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 36.56645202636719
+    },
+    {
+      "file_name": "9999994_00000_d_0000088.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 51.622249603271484
+    },
+    {
+      "file_name": "9999994_00000_d_0000101.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 79.83695983886719
+    },
+    {
+      "file_name": "9999994_00000_d_0000113.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 8.609951972961426
+    },
+    {
+      "file_name": "9999997_00000_d_0000007.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.0840611457824707
+    },
+    {
+      "file_name": "9999997_00000_d_0000020.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 4.561553001403809
+    },
+    {
+      "file_name": "9999997_00000_d_0000032.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 3.229933977127075
+    },
+    {
+      "file_name": "9999997_00000_d_0000045.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 1.1226171255111694
+    },
+    {
+      "file_name": "9999997_00000_d_0000057.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 1.7604868412017822
+    },
+    {
+      "file_name": "9999997_00000_d_0000070.jpg",
+      "width": 1400,
+      "height": 1050,
+      "tiles": 4,
+      "max_density_score": 2.1723484992980957
+    },
+    {
+      "file_name": "9999998_00017_d_0000013.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 33.52046585083008
+    },
+    {
+      "file_name": "9999998_00036_d_0000029.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 16.255449295043945
+    },
+    {
+      "file_name": "9999998_00059_d_0000045.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 3.262239933013916
+    },
+    {
+      "file_name": "9999998_00073_d_0000058.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 17.368791580200195
+    },
+    {
+      "file_name": "9999998_00086_d_0000070.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 39.257415771484375
+    },
+    {
+      "file_name": "9999998_00107_d_0000085.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 35.85005569458008
+    },
+    {
+      "file_name": "9999998_00120_d_0000098.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 67.83629608154297
+    },
+    {
+      "file_name": "9999998_00136_d_0000114.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 22.964468002319336
+    },
+    {
+      "file_name": "9999998_00153_d_0000129.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 6.483215808868408
+    },
+    {
+      "file_name": "9999998_00180_d_0000145.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 4.065523147583008
+    },
+    {
+      "file_name": "9999998_00196_d_0000157.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 19.21078109741211
+    },
+    {
+      "file_name": "9999998_00214_d_0000170.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 12.13195514678955
+    },
+    {
+      "file_name": "9999998_00227_d_0000183.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 0.13832424581050873
+    },
+    {
+      "file_name": "9999998_00242_d_0000196.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 1.0253758430480957
+    },
+    {
+      "file_name": "9999998_00257_d_0000211.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 2.9134461879730225
+    },
+    {
+      "file_name": "9999998_00272_d_0000225.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 14.52799129486084
+    },
+    {
+      "file_name": "9999998_00285_d_0000238.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 9.848342895507812
+    },
+    {
+      "file_name": "9999998_00299_d_0000252.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 9.440291404724121
+    },
+    {
+      "file_name": "9999998_00312_d_0000265.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 11.24217414855957
+    },
+    {
+      "file_name": "9999998_00325_d_0000277.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 59.337799072265625
+    },
+    {
+      "file_name": "9999998_00338_d_0000290.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 8.56238079071045
+    },
+    {
+      "file_name": "9999998_00351_d_0000303.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 41.42412185668945
+    },
+    {
+      "file_name": "9999998_00363_d_0000315.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 11.834460258483887
+    },
+    {
+      "file_name": "9999998_00376_d_0000328.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 0.8426169753074646
+    },
+    {
+      "file_name": "9999998_00389_d_0000341.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 0.5260688662528992
+    },
+    {
+      "file_name": "9999998_00401_d_0000353.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 1.1213102340698242
+    },
+    {
+      "file_name": "9999998_00414_d_0000366.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 5.044040203094482
+    },
+    {
+      "file_name": "9999998_00427_d_0000379.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 31.214948654174805
+    },
+    {
+      "file_name": "9999999_00023_d_0000001.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 1.532433271408081
+    },
+    {
+      "file_name": "9999999_00055_d_0000014.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 26.523109436035156
+    },
+    {
+      "file_name": "9999999_00081_d_0000027.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 25.36591339111328
+    },
+    {
+      "file_name": "9999999_00109_d_0000039.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 17.48094940185547
+    },
+    {
+      "file_name": "9999999_00135_d_0000052.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 8.927695274353027
+    },
+    {
+      "file_name": "9999999_00161_d_0000065.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 19.280559539794922
+    },
+    {
+      "file_name": "9999999_00187_d_0000077.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 12.315289497375488
+    },
+    {
+      "file_name": "9999999_00215_d_0000090.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 13.465741157531738
+    },
+    {
+      "file_name": "9999999_00241_d_0000103.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 33.889915466308594
+    },
+    {
+      "file_name": "9999999_00265_d_0000115.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 2.028085470199585
+    },
+    {
+      "file_name": "9999999_00291_d_0000128.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 21.881616592407227
+    },
+    {
+      "file_name": "9999999_00322_d_0000141.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 15.236933708190918
+    },
+    {
+      "file_name": "9999999_00348_d_0000153.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 0.0
+    },
+    {
+      "file_name": "9999999_00382_d_0000166.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 0.570096492767334
+    },
+    {
+      "file_name": "9999999_00408_d_0000179.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 48.50212097167969
+    },
+    {
+      "file_name": "9999999_00432_d_0000191.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 3.6240432262420654
+    },
+    {
+      "file_name": "9999999_00458_d_0000204.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 13.2343168258667
+    },
+    {
+      "file_name": "9999999_00488_d_0000217.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 35.88957977294922
+    },
+    {
+      "file_name": "9999999_00512_d_0000229.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 29.47629165649414
+    },
+    {
+      "file_name": "9999999_00540_d_0000242.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 13.059678077697754
+    },
+    {
+      "file_name": "9999999_00566_d_0000255.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 2.498734951019287
+    },
+    {
+      "file_name": "9999999_00590_d_0000267.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 23.725374221801758
+    },
+    {
+      "file_name": "9999999_00616_d_0000280.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 10.942861557006836
+    },
+    {
+      "file_name": "9999999_00644_d_0000293.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 12.58375358581543
+    },
+    {
+      "file_name": "9999999_00671_d_0000305.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 16.3474178314209
+    },
+    {
+      "file_name": "9999999_00701_d_0000318.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 26.831552505493164
+    },
+    {
+      "file_name": "9999999_00727_d_0000331.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 53.090858459472656
+    },
+    {
+      "file_name": "9999999_00751_d_0000343.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 27.71471405029297
+    },
+    {
+      "file_name": "9999999_00779_d_0000356.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 27.368854522705078
+    },
+    {
+      "file_name": "9999999_00807_d_0000369.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 35.33634948730469
+    },
+    {
+      "file_name": "9999999_00835_d_0000381.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 29.235897064208984
+    },
+    {
+      "file_name": "9999999_00861_d_0000394.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 33.000553131103516
+    },
+    {
+      "file_name": "9999999_00887_d_0000407.jpg",
+      "width": 2000,
+      "height": 1500,
+      "tiles": 6,
+      "max_density_score": 5.74296236038208
+    }
+  ]
+}
