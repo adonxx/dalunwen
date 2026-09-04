@@ -40,6 +40,12 @@ STAGES = {
         use_inner_wiou=True,
         use_p5lite_gate=True,
     ),
+    "full_p5lite_p4only": Stage(
+        "drone-yolo11s-p5lite-p4only.yaml",
+        use_lscd=True,
+        use_inner_wiou=True,
+        use_p5lite_gate=True,
+    ),
     "lscd_nwd": Stage("drone-yolo11s-mffpn.yaml", use_lscd=True, use_nwd=True),
     "full_nwd_hybrid": Stage("drone-yolo11s-mffpn.yaml", use_lscd=True, use_inner_wiou_nwd=True),
     "full_small_tal": Stage(

@@ -36,6 +36,7 @@ from drone_yolo.loss import (  # noqa: E402
         ("full_nwd_hybrid", [4.0, 8.0, 16.0]),
         ("full_small_tal", [4.0, 8.0, 16.0]),
         ("full_p5lite_gate", [4.0, 8.0, 16.0]),
+        ("full_p5lite_p4only", [4.0, 8.0, 16.0]),
     ],
 )
 def test_stage_builds_with_expected_strides(stage: str, expected_stride: list[float]) -> None:
@@ -100,6 +101,13 @@ def test_p5lite_gate_preserves_p4_shape_and_receives_gradients() -> None:
     output.square().mean().backward()
     assert feature.grad is not None and torch.isfinite(feature.grad).all()
     assert gate.spatial_gate.bias.detach().item() == pytest.approx(-2.0)
+
+
+def test_p5lite_p4only_keeps_gate_out_of_p2_p3_paths() -> None:
+    model = build_model("full_p5lite_p4only").model
+    gate_indexes = [index for index, module in enumerate(model.model) if isinstance(module, P5LiteSpatialGate)]
+    assert gate_indexes == [22]
+    assert model.model[-1].f == [14, 17, 22]
 
 
 def test_lscd_matches_shared_head_topology() -> None:

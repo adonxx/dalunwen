@@ -21,7 +21,8 @@
 ## 进行中的结构筛选
 
 - [P5-lite 语义反馈与空间门控（50轮结果）](p5lite_gated_fusion/README.md)
-- [P5-lite 空间门控（150轮探索性复验方案）](p5lite_gated_fusion/LONGRUN_PLAN.md)
+- [P5-lite 空间门控（150轮探索性复验结果）](p5lite_gated_fusion/LONGRUN_REPORT.md)
+- [P5-lite 仅增强最终P4（自动分阶段方案）](p5lite_p4only/EXPERIMENT_PLAN.md)
 
 ## 推理策略探索
 
