@@ -18,6 +18,10 @@
 - [重叠切片训练](overlap_tile_training/REPORT.md)
 - [尺度选择性知识蒸馏](selective_kd/README.md)
 
+## 进行中的结构筛选
+
+- [P5-lite 语义反馈与空间门控（预注册50轮方案）](p5lite_gated_fusion/EXPERIMENT_PLAN.md)
+
 ## 推理策略探索
 
 - [SAHI 切片推理](sahi_inference/README.md)

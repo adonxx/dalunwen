@@ -23,6 +23,7 @@ class Stage:
     use_nwd: bool = False
     use_inner_wiou_nwd: bool = False
     use_small_aware_tal: bool = False
+    use_p5lite_gate: bool = False
 
 
 STAGES = {
@@ -33,6 +34,12 @@ STAGES = {
     "mffpn_p3p5": Stage("drone-yolo11s-mffpn-p3p5.yaml"),
     "lscd": Stage("drone-yolo11s-mffpn.yaml", use_lscd=True),
     "full": Stage("drone-yolo11s-mffpn.yaml", use_lscd=True, use_inner_wiou=True),
+    "full_p5lite_gate": Stage(
+        "drone-yolo11s-p5lite-gated.yaml",
+        use_lscd=True,
+        use_inner_wiou=True,
+        use_p5lite_gate=True,
+    ),
     "lscd_nwd": Stage("drone-yolo11s-mffpn.yaml", use_lscd=True, use_nwd=True),
     "full_nwd_hybrid": Stage("drone-yolo11s-mffpn.yaml", use_lscd=True, use_inner_wiou_nwd=True),
     "full_small_tal": Stage(
@@ -56,6 +63,7 @@ def build_model(stage_name: str, weights: str | None = None) -> YOLO:
         use_nwd=stage.use_nwd,
         use_inner_wiou_nwd=stage.use_inner_wiou_nwd,
         use_small_aware_tal=stage.use_small_aware_tal,
+        use_p5lite_gate=stage.use_p5lite_gate,
     )
     model_path = PROJECT_ROOT / "configs" / "models" / stage.model_yaml
     model = YOLO(str(model_path), task="detect")

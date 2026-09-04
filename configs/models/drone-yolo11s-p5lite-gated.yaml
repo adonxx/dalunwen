@@ -1,0 +1,45 @@
+# P5-lite semantic feedback with spatial gating for YOLO11s Drone-YOLO.
+# Detection remains P2/P3/P4.  P5-lite is an internal context source only;
+# it is not a fourth detection scale.
+nc: 10
+scale: s
+scales:
+  n: [0.50, 0.25, 1024]
+  s: [0.50, 0.50, 1024]
+  m: [0.50, 1.00, 512]
+  l: [1.00, 1.50, 512]
+  x: [1.00, 1.50, 512]
+
+backbone:
+  - [-1, 1, Conv, [64, 3, 2]]                 # 0: P1/2
+  - [-1, 1, Conv, [128, 3, 2]]                # 1: P2/4
+  - [-1, 2, C3k2, [256, false, 0.25]]         # 2: B2
+  - [-1, 1, Conv, [256, 3, 2]]                # 3: P3/8
+  - [-1, 2, C3k2, [512, false, 0.25]]         # 4: B3
+  - [-1, 1, Conv, [512, 3, 2]]                # 5: P4/16
+  - [-1, 2, C3k2, [512, true]]                # 6: B4
+  - [-1, 1, SPPF, [512, 5]]                   # 7
+  - [-1, 2, C2PSA, [512]]                     # 8: deepest P4 feature
+
+head:
+  # Build 1/32 semantic context internally, then feed it back to P4.  Args
+  # are explicit for YOLO11s: P4 has 256 channels after the 0.5 width gain.
+  - [-1, 1, P5LiteSpatialGate, [256, 128]]    # 9: gated P5-lite -> P4
+
+  # Top-down semantic propagation uses the context-refined P4.
+  - [-1, 1, nn.Upsample, [null, 2, nearest]]  # 10: P4 -> P3
+  - [[-1, 4], 1, Concat, [1]]                 # 11
+  - [-1, 2, C3k2, [256, false]]               # 12: top-down P3
+  - [-1, 1, nn.Upsample, [null, 2, nearest]]  # 13: P3 -> P2
+  - [[-1, 2], 1, Concat, [1]]                 # 14
+  - [-1, 2, C3k2, [128, false]]               # 15: P2/4 small
+
+  # Bottom-up geometric propagation and P4 refinement.
+  - [-1, 1, Conv, [128, 3, 2]]                # 16: P2 -> P3
+  - [[-1, 12], 1, Concat, [1]]                # 17
+  - [-1, 2, C3k2, [256, false]]               # 18: P3/8 medium
+  - [-1, 1, Conv, [256, 3, 2]]                # 19: P3 -> P4
+  - [[-1, 9], 1, Concat, [1]]                 # 20: retain gated semantic P4
+  - [-1, 2, C3k2, [512, false]]               # 21: P4/16 large
+  - [-1, 2, C3k2, [512, false]]               # 22: MF-FPN P4 refinement
+  - [[15, 18, 22], 1, Detect, [nc]]           # P2, P3, P4 only

@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from drone_yolo import build_model  # noqa: E402
-from drone_yolo.fusion import AdaptiveWeightedConcat  # noqa: E402
+from drone_yolo.fusion import AdaptiveWeightedConcat, P5LiteSpatialGate  # noqa: E402
 from drone_yolo.head import LSCDDetect  # noqa: E402
 from drone_yolo.loss import (  # noqa: E402
     InnerWIoUDetectionLoss,
@@ -35,6 +35,7 @@ from drone_yolo.loss import (  # noqa: E402
         ("lscd_nwd", [4.0, 8.0, 16.0]),
         ("full_nwd_hybrid", [4.0, 8.0, 16.0]),
         ("full_small_tal", [4.0, 8.0, 16.0]),
+        ("full_p5lite_gate", [4.0, 8.0, 16.0]),
     ],
 )
 def test_stage_builds_with_expected_strides(stage: str, expected_stride: list[float]) -> None:
@@ -89,6 +90,16 @@ def test_weighted_fusion_receives_branch_specific_gradients() -> None:
     ]
     assert all(gradient is not None and torch.isfinite(gradient).all() for gradient in gradients)
     assert any(not torch.allclose(gradient, torch.zeros_like(gradient)) for gradient in gradients)
+
+
+def test_p5lite_gate_preserves_p4_shape_and_receives_gradients() -> None:
+    gate = P5LiteSpatialGate(channels=256, hidden_channels=128)
+    feature = torch.randn(2, 256, 40, 40, requires_grad=True)
+    output = gate(feature)
+    assert output.shape == feature.shape
+    output.square().mean().backward()
+    assert feature.grad is not None and torch.isfinite(feature.grad).all()
+    assert gate.spatial_gate.bias.detach().item() == pytest.approx(-2.0)
 
 
 def test_lscd_matches_shared_head_topology() -> None:
