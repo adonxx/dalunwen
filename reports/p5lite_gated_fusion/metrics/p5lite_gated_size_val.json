@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-04T14:09:38+08:00",
+  "stage": "full_p5lite_gate",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\p5lite_gated_seed0_50e\\weights\\best.pt",
+    "size_bytes": 6021603,
+    "sha256": "012cf7cad6c7352fff8fbb7041566e540be59a9053b3cb96a178ce0bb4eea254"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "area_coordinate_system": "original image pixels",
+    "area_definition": {
+      "small": "area < 32^2 pixels",
+      "medium": "32^2 <= area < 96^2 pixels",
+      "large": "area >= 96^2 pixels"
+    }
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "pycocotools": "installed",
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "dataset_count": {
+    "images": 548,
+    "annotations": 38759
+  },
+  "ground_truth_area_counts": {
+    "all": 38759,
+    "small": 26586,
+    "medium": 11105,
+    "large": 1068
+  },
+  "overall_by_area": {
+    "all": {
+      "ap": 0.20663186956619334,
+      "ap50": 0.3597423508584727,
+      "ap75": 0.2071573161672224,
+      "ar_max_det": 0.35406477671053516
+    },
+    "small": {
+      "ap": 0.12728957225690135,
+      "ap50": 0.2655601500922839,
+      "ap75": 0.1068932519192663,
+      "ar_max_det": 0.25622166146825315
+    },
+    "medium": {
+      "ap": 0.30125196744115934,
+      "ap50": 0.4917423458319303,
+      "ap75": 0.32169595865292755,
+      "ar_max_det": 0.4923265877243811
+    },
+    "large": {
+      "ap": 0.36932346072722855,
+      "ap50": 0.5142131612218398,
+      "ap75": 0.4185693967748311,
+      "ar_max_det": 0.5875242067039559
+    }
+  },
+  "per_class_by_area": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "area": "all",
+      "ap": 0.19437106271825472,
+      "ap50": 0.4408314821958093,
+      "ap75": 0.13843580827706212,
+      "ar_max_det": 0.3162030755314338
+    },
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "area": "small",
+      "ap": 0.1612214085572278,
+      "ap50": 0.38918339888422565,
+      "ap75": 0.10072048354904885,
+      "ar_max_det": 0.28428866511747997
+    },
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "area": "medium",
+      "ap": 0.41338931742963425,
+      "ap50": 0.7699621985901903,
+      "ap75": 0.3889052179842072,
+      "ar_max_det": 0.5396279069767442
+    },
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "area": "large",
+      "ap": 0.4528142725407169,
+      "ap50": 0.8000349265517784,
+      "ap75": 0.508932433532756,
+      "ar_max_det": 0.6260869565217392
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "area": "all",
+      "ap": 0.12007702705837409,
+      "ap50": 0.325530317099301,
+      "ap75": 0.05698497292448234,
+      "ar_max_det": 0.2513365853658537
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "area": "small",
+      "ap": 0.11551805716302269,
+      "ap50": 0.31747792762430943,
+      "ap75": 0.04965013645956507,
+      "ar_max_det": 0.234139494709566
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "area": "medium",
+      "ap": 0.18889849327796543,
+      "ap50": 0.4529031968766741,
+      "ap75": 0.12582687344472077,
+      "ar_max_det": 0.4118609406952965
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "area": "large",
+      "ap": 0.06825020531857554,
+      "ap50": 0.11021821803320417,
+      "ap75": 0.06195124229404072,
+      "ar_max_det": 0.64
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "area": "all",
+      "ap": 0.038462851277507135,
+      "ap50": 0.09800250340528516,
+      "ap75": 0.02245516859829977,
+      "ar_max_det": 0.17513597513597515
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "area": "small",
+      "ap": 0.026699028183764417,
+      "ap50": 0.06952890114818941,
+      "ap75": 0.01322629298858844,
+      "ar_max_det": 0.1332383665716999
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "area": "medium",
+      "ap": 0.0923491292909065,
+      "ap50": 0.22048394205081223,
+      "ap75": 0.06494081042333329,
+      "ar_max_det": 0.36709956709956715
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "area": "large",
+      "ap": 0.0022442244224422443,
+      "ap50": 0.00748074807480748,
+      "ap75": 0.0,
+      "ar_max_det": 0.1
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "area": "all",
+      "ap": 0.5368295062884846,
+      "ap50": 0.7973701858662953,
+      "ap75": 0.5996894025401444,
+      "ar_max_det": 0.618721558589306
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "area": "small",
+      "ap": 0.3546857772554737,
+      "ap50": 0.6497606159231882,
+      "ap75": 0.35479771381186037,
+      "ar_max_det": 0.46568740955137483
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "area": "medium",
+      "ap": 0.680924875690066,
+      "ap50": 0.9146763499388532,
+      "ap75": 0.8035979399499741,
+      "ar_max_det": 0.7533333333333333
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "area": "large",
+      "ap": 0.825618716443455,
+      "ap50": 0.9594081666835333,
+      "ap75": 0.9277909118916018,
+      "ar_max_det": 0.8745827984595635
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "area": "all",
+      "ap": 0.2928944019483073,
+      "ap50": 0.42140836810860516,
+      "ap75": 0.3415569900676842,
+      "ar_max_det": 0.49058227848101277
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "area": "small",
+      "ap": 0.11882239214572042,
+      "ap50": 0.2144904689756218,
+      "ap75": 0.12328498291939,
+      "ar_max_det": 0.3018143009605122
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "area": "medium",
+      "ap": 0.4345276342073637,
+      "ap50": 0.5941742176127248,
+      "ap75": 0.5229600203958625,
+      "ar_max_det": 0.6472372697724811
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "area": "large",
+      "ap": 0.5307129751970434,
+      "ap50": 0.6315823077869018,
+      "ap75": 0.5986521145449948,
+      "ar_max_det": 0.7721739130434784
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "area": "all",
+      "ap": 0.19932222975593378,
+      "ap50": 0.31750362481305416,
+      "ap75": 0.21539602813552358,
+      "ar_max_det": 0.3788
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "area": "small",
+      "ap": 0.09466542595523063,
+      "ap50": 0.17619228326787117,
+      "ap75": 0.09169132675312133,
+      "ar_max_det": 0.24117647058823527
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "area": "medium",
+      "ap": 0.21409270017693108,
+      "ap50": 0.33802148661257897,
+      "ap75": 0.22917038836040263,
+      "ar_max_det": 0.41577540106951866
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "area": "large",
+      "ap": 0.48409185908949337,
+      "ap50": 0.6783930245378058,
+      "ap75": 0.5695180127826871,
+      "ar_max_det": 0.6770114942528735
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "area": "all",
+      "ap": 0.10539494831384123,
+      "ap50": 0.18785531427876712,
+      "ap75": 0.10678906749580346,
+      "ar_max_det": 0.25770334928229666
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "area": "small",
+      "ap": 0.07722389526802854,
+      "ap50": 0.1562191663181197,
+      "ap75": 0.062222550913125486,
+      "ar_max_det": 0.1855072463768116
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "area": "medium",
+      "ap": 0.15503859122640182,
+      "ap50": 0.2528968786945178,
+      "ap75": 0.17335828310102983,
+      "ar_max_det": 0.3577669902912622
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "area": "large",
+      "ap": 0.2683012060173019,
+      "ap50": 0.3972250237936276,
+      "ap75": 0.3972250237936276,
+      "ar_max_det": 0.5583333333333333
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "area": "all",
+      "ap": 0.06948781298672133,
+      "ap50": 0.10391457956157861,
+      "ap75": 0.08076481404965245,
+      "ar_max_det": 0.24887218045112786
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "area": "small",
+      "ap": 0.046535101145746376,
+      "ap50": 0.08133108416787863,
+      "ap75": 0.04997022681630402,
+      "ar_max_det": 0.18
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "area": "medium",
+      "ap": 0.09548666338651683,
+      "ap50": 0.13229133611654928,
+      "ap75": 0.11812099106449388,
+      "ar_max_det": 0.3391891891891892
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "area": "large",
+      "ap": 0.22673267326732668,
+      "ap50": 0.3069306930693068,
+      "ap75": 0.20792079207920786,
+      "ar_max_det": 0.44000000000000006
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "area": "all",
+      "ap": 0.32317859127660264,
+      "ap50": 0.4695319149271755,
+      "ap75": 0.38634239279658905,
+      "ar_max_det": 0.4366533864541832
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "area": "small",
+      "ap": 0.11541069612916344,
+      "ap50": 0.1957291199207637,
+      "ap75": 0.13136680597917696,
+      "ar_max_det": 0.20172413793103447
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "area": "medium",
+      "ap": 0.44207458906808117,
+      "ap50": 0.6563952003588388,
+      "ap75": 0.5288977942884622,
+      "ar_max_det": 0.583495145631068
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "area": "large",
+      "ap": 0.7197858034621891,
+      "ap50": 0.8725693234180545,
+      "ap75": 0.8641984863343461,
+      "ar_max_det": 0.815625
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "area": "all",
+      "ap": 0.18630026403790684,
+      "ap50": 0.4354752183288561,
+      "ap75": 0.12315851678698327,
+      "ar_max_det": 0.3666393778141629
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "area": "small",
+      "ap": 0.1621139407656352,
+      "ap50": 0.4056885346926715,
+      "ap75": 0.09200199900248254,
+      "ar_max_det": 0.334640522875817
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "area": "medium",
+      "ap": 0.2957376806577263,
+      "ap50": 0.5856186514675632,
+      "ap75": 0.2611812675167891,
+      "ar_max_det": 0.5078801331853496
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "area": "large",
+      "ap": 0.11468267151374162,
+      "ap50": 0.37828918026937824,
+      "ap75": 0.04950495049504951,
+      "ar_max_det": 0.3714285714285714
+    }
+  ],
+  "ultralytics_overall": {
+    "metrics/precision(B)": 0.48560478774503546,
+    "metrics/recall(B)": 0.37674951107557597,
+    "metrics/mAP50(B)": 0.35755804969756655,
+    "metrics/mAP50-95(B)": 0.20427432143312468,
+    "fitness": 0.20427432143312468
+  },
+  "ground_truth_json": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\reports\\scale_ablation\\metrics\\visdrone_val_coco_ground_truth.json",
+  "predictions_json": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\p5lite_gated_seed0_50e_size_eval\\predictions.json",
+  "validation_save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\p5lite_gated_seed0_50e_size_eval"
+}

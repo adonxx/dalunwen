@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "evaluated_at": "2026-09-04T14:09:06+08:00",
+  "stage": "full_p5lite_gate",
+  "checkpoint": {
+    "path": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\p5lite_gated_seed0_50e\\weights\\best.pt",
+    "size_bytes": 6021603,
+    "sha256": "012cf7cad6c7352fff8fbb7041566e540be59a9053b3cb96a178ce0bb4eea254"
+  },
+  "protocol": {
+    "dataset": "VisDrone2019",
+    "data_yaml": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\configs\\data\\visdrone2019.yaml",
+    "split": "val",
+    "dataset_count": {
+      "images": 548,
+      "labels": 548
+    },
+    "imgsz": 640,
+    "batch": 4,
+    "device": "0",
+    "workers": 0,
+    "conf": 0.001,
+    "iou": 0.7,
+    "max_det": 300,
+    "half": false,
+    "plots": true
+  },
+  "environment": {
+    "python": "3.12.10",
+    "torch": "2.8.0+cu129",
+    "ultralytics": "8.4.110",
+    "cuda_available": true,
+    "gpu": "NVIDIA GeForce RTX 4080 SUPER"
+  },
+  "model": {
+    "parameters": 2843390,
+    "parameters_m": 2.84339,
+    "gflops_640": 19.33056,
+    "strides": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "post_validation_fused_parameters": 2836894,
+    "post_validation_fused_parameters_m": 2.836894,
+    "post_validation_fused_gflops_640": 19.076608
+  },
+  "overall": {
+    "metrics/precision(B)": 0.48560478774503546,
+    "metrics/recall(B)": 0.37674951107557597,
+    "metrics/mAP50(B)": 0.35755804969756655,
+    "metrics/mAP50-95(B)": 0.20427432143312468,
+    "fitness": 0.20427432143312468
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "pedestrian",
+      "precision": 0.5488186936183025,
+      "recall": 0.42989597467209406,
+      "ap50": 0.43658071805194043,
+      "ap50_95": 0.19152850909989233
+    },
+    {
+      "class_id": 1,
+      "class_name": "people",
+      "precision": 0.5189783396127565,
+      "recall": 0.32714611160911283,
+      "ap50": 0.321111147009298,
+      "ap50_95": 0.11728823409238345
+    },
+    {
+      "class_id": 2,
+      "class_name": "bicycle",
+      "precision": 0.29641062265612544,
+      "recall": 0.12121212121212122,
+      "ap50": 0.09388775998963653,
+      "ap50_95": 0.036718231190684764
+    },
+    {
+      "class_id": 3,
+      "class_name": "car",
+      "precision": 0.6876385594153923,
+      "recall": 0.8031143344709898,
+      "ap50": 0.7998155196394716,
+      "ap50_95": 0.5369371467139651
+    },
+    {
+      "class_id": 4,
+      "class_name": "van",
+      "precision": 0.4964847085820618,
+      "recall": 0.44434079519501724,
+      "ap50": 0.419736741961264,
+      "ap50_95": 0.2906457553318508
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "precision": 0.4311097224152747,
+      "recall": 0.3626666666666667,
+      "ap50": 0.31525105559445454,
+      "ap50_95": 0.19576736183036597
+    },
+    {
+      "class_id": 6,
+      "class_name": "tricycle",
+      "precision": 0.44641756977044966,
+      "recall": 0.19292292605873956,
+      "ap50": 0.1855565152183965,
+      "ap50_95": 0.1029009017517564
+    },
+    {
+      "class_id": 7,
+      "class_name": "awning-tricycle",
+      "precision": 0.2638039088214348,
+      "recall": 0.17293233082706766,
+      "ap50": 0.09995241196740909,
+      "ap50_95": 0.06567152271292885
+    },
+    {
+      "class_id": 8,
+      "class_name": "bus",
+      "precision": 0.6485372905318845,
+      "recall": 0.44621513944223107,
+      "ap50": 0.4692272340764472,
+      "ap50_95": 0.32122959084379077
+    },
+    {
+      "class_id": 9,
+      "class_name": "motor",
+      "precision": 0.517848462026672,
+      "recall": 0.4670487106017192,
+      "ap50": 0.43446139346734713,
+      "ap50_95": 0.18405596076362896
+    }
+  ],
+  "speed_ms_per_image": {
+    "preprocess": 0.11434616790609613,
+    "inference": 1.4235947080163711,
+    "loss": 0.0008478102052614456,
+    "postprocess": 1.6736054744531457
+  },
+  "save_dir": "C:\\AllenX\\OneDrive\\文档\\New project\\drone_yolo_reproduction\\runs\\p5lite_gated_seed0_50e_eval"
+}
