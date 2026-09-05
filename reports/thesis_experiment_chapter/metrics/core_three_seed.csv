@@ -1,0 +1,3 @@
+﻿method,seeds,epochs,map50_mean,map50_sd,map5095_mean,map5095_sd,small_ap_mean,small_ap_sd,medium_ap_mean,medium_ap_sd,large_ap_mean,large_ap_sd,params_m,gflops
+YOLOv11s,3,150,39.64,0.15,23.24,0.08,13.78,0.24,35.09,0.17,47.06,1.75,9.432,21.56
+Drone-YOLO (Full),3,150,40.99,0.35,24.03,0.27,15.46,0.22,34.85,0.39,44.28,1.62,2.772,19.19
