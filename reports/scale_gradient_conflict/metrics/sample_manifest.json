@@ -1,0 +1,242 @@
+[
+  {
+    "batch_index": 0,
+    "source_index": 1,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000007_05499_d_0000037.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000007_05999_d_0000038.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_00889_d_0000039.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_01999_d_0000040.jpg"
+    ],
+    "targets": {
+      "small": 50,
+      "medium": 76,
+      "large": 6
+    }
+  },
+  {
+    "batch_index": 1,
+    "source_index": 2,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_02499_d_0000041.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_02999_d_0000042.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_03499_d_0000043.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_03999_d_0000044.jpg"
+    ],
+    "targets": {
+      "small": 46,
+      "medium": 56,
+      "large": 11
+    }
+  },
+  {
+    "batch_index": 2,
+    "source_index": 3,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000008_04499_d_0000045.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000010_00569_d_0000056.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000010_05149_d_0000057.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000010_05291_d_0000058.jpg"
+    ],
+    "targets": {
+      "small": 133,
+      "medium": 52,
+      "large": 1
+    }
+  },
+  {
+    "batch_index": 3,
+    "source_index": 19,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000071_03470_d_0000005.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000071_03522_d_0000006.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000071_04085_d_0000007.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000071_05298_d_0000008.jpg"
+    ],
+    "targets": {
+      "small": 313,
+      "medium": 25,
+      "large": 3
+    }
+  },
+  {
+    "batch_index": 4,
+    "source_index": 21,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000071_07913_d_0000013.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_00000_d_0000001.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_00137_d_0000002.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_03425_d_0000004.jpg"
+    ],
+    "targets": {
+      "small": 315,
+      "medium": 17,
+      "large": 1
+    }
+  },
+  {
+    "batch_index": 5,
+    "source_index": 22,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_04493_d_0000005.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_05285_d_0000006.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_05564_d_0000007.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_05654_d_0000008.jpg"
+    ],
+    "targets": {
+      "small": 289,
+      "medium": 30,
+      "large": 1
+    }
+  },
+  {
+    "batch_index": 6,
+    "source_index": 23,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_05827_d_0000009.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_06173_d_0000010.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_07242_d_0000011.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_07660_d_0000012.jpg"
+    ],
+    "targets": {
+      "small": 247,
+      "medium": 20,
+      "large": 1
+    }
+  },
+  {
+    "batch_index": 7,
+    "source_index": 24,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_08702_d_0000013.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000072_09163_d_0000014.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_00004_d_0000001.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_00352_d_0000002.jpg"
+    ],
+    "targets": {
+      "small": 125,
+      "medium": 12,
+      "large": 6
+    }
+  },
+  {
+    "batch_index": 8,
+    "source_index": 25,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_00616_d_0000003.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_01012_d_0000004.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_01444_d_0000005.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_01601_d_0000006.jpg"
+    ],
+    "targets": {
+      "small": 68,
+      "medium": 44,
+      "large": 2
+    }
+  },
+  {
+    "batch_index": 9,
+    "source_index": 26,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_01792_d_0000007.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_01975_d_0000008.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_02667_d_0000010.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_03315_d_0000011.jpg"
+    ],
+    "targets": {
+      "small": 150,
+      "medium": 37,
+      "large": 3
+    }
+  },
+  {
+    "batch_index": 10,
+    "source_index": 27,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_03689_d_0000012.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_03930_d_0000013.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_04200_d_0000014.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_04382_d_0000015.jpg"
+    ],
+    "targets": {
+      "small": 102,
+      "medium": 44,
+      "large": 10
+    }
+  },
+  {
+    "batch_index": 11,
+    "source_index": 28,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_04674_d_0000016.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_04925_d_0000017.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_04999_d_0000018.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000076_05079_d_0000019.jpg"
+    ],
+    "targets": {
+      "small": 65,
+      "medium": 16,
+      "large": 6
+    }
+  },
+  {
+    "batch_index": 12,
+    "source_index": 42,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000109_00606_d_0000062.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000109_01140_d_0000063.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000109_03179_d_0000064.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000110_01428_d_0000066.jpg"
+    ],
+    "targets": {
+      "small": 78,
+      "medium": 9,
+      "large": 1
+    }
+  },
+  {
+    "batch_index": 13,
+    "source_index": 57,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000140_02477_d_0000006.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000140_02677_d_0000007.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000141_00251_d_0000009.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000141_00651_d_0000011.jpg"
+    ],
+    "targets": {
+      "small": 828,
+      "medium": 25,
+      "large": 2
+    }
+  },
+  {
+    "batch_index": 14,
+    "source_index": 60,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_00858_d_0000027.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_01058_d_0000028.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_01258_d_0000029.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_01458_d_0000030.jpg"
+    ],
+    "targets": {
+      "small": 481,
+      "medium": 35,
+      "large": 1
+    }
+  },
+  {
+    "batch_index": 15,
+    "source_index": 61,
+    "files": [
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_01658_d_0000031.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_02058_d_0000033.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_02258_d_0000034.jpg",
+      "E:\\yolo_dcaf\\data\\VisDrone_YOLO\\train\\images\\0000142_02458_d_0000035.jpg"
+    ],
+    "targets": {
+      "small": 459,
+      "medium": 27,
+      "large": 2
+    }
+  }
+]

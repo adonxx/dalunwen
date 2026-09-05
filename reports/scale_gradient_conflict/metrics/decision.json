@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-09-05T08:01:57+08:00",
+  "conflict_supported": false,
+  "criterion": "candidate shared_features or shared_predictors: mean localization cosine < -0.05, negative fraction >= 0.60, n >= 16",
+  "candidate_shared_features": {
+    "variant": "p4only_candidate",
+    "objective": "localization",
+    "parameter_group": "shared_features",
+    "pair": "small-large",
+    "n": 16,
+    "mean_cosine": 0.017284371715504676,
+    "median_cosine": 0.023874380625784397,
+    "std_cosine": 0.08524357503962886,
+    "negative_fraction": 0.375
+  },
+  "candidate_shared_predictors": {
+    "variant": "p4only_candidate",
+    "objective": "localization",
+    "parameter_group": "shared_predictors",
+    "pair": "small-large",
+    "n": 16,
+    "mean_cosine": 0.011350623215548694,
+    "median_cosine": 0.006446742685511708,
+    "std_cosine": 0.10695004375346419,
+    "negative_fraction": 0.375
+  }
+}
